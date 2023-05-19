@@ -4,6 +4,148 @@
     "/Users/alperalanyali/Desktop/RentCarServer/Persistence/Persistence.csproj": {}
   },
   "projects": {
+    "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj",
+        "packagesPath": "/Users/alperalanyali/.nuget/packages/",
+        "outputPath": "/Users/alperalanyali/Desktop/RentCarServer/Application/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/alperalanyali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.302/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj": {
+                "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj",
+        "packagesPath": "/Users/alperalanyali/.nuget/packages/",
+        "outputPath": "/Users/alperalanyali/Desktop/RentCarServer/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/alperalanyali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.302/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/alperalanyali/Desktop/RentCarServer/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,7 +172,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj": {
+                "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj"
+              },
+              "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj": {
+                "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

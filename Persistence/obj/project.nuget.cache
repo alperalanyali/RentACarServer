@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "oWumLd2TZn4Qtqo53NWftJCFMdX8VAufNmIo0/N4DBXs5/9q7OSRdZlm7RWaQfeHI1XnWpCgNm8NtY0ZdYWeBg==",
+  "dgSpecHash": "SycNW/G4/+QbZrN3M5Pp78SuL/kHAU9OezoCV74f12nqrpMMhGJGH24BdvfpS6VS4n9FlhRypkmRlkXyYHaXZg==",
   "success": true,
   "projectFilePath": "/Users/alperalanyali/Desktop/RentCarServer/Persistence/Persistence.csproj",
   "expectedPackageFiles": [
     "/Users/alperalanyali/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/mediatr/12.0.1/mediatr.12.0.1.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.authentication.cookies/2.2.0/microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

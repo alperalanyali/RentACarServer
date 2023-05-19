@@ -162,3 +162,10 @@
 /Users/alperalanyali/Desktop/RentCarServer/Persistence/obj/Debug/net7.0/Persistence.pdb
 /Users/alperalanyali/Desktop/RentCarServer/Persistence/obj/Debug/net7.0/Persistence.genruntimeconfig.cache
 /Users/alperalanyali/Desktop/RentCarServer/Persistence/obj/Debug/net7.0/ref/Persistence.dll
+/Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/Application.deps.json
+/Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/Application.runtimeconfig.json
+/Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/Application
+/Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/MediatR.dll
+/Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/MediatR.Contracts.dll
+/Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/Application.dll
+/Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/Application.pdb
