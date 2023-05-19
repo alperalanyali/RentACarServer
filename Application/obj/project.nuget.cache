@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dix/Nn+XlFOD1is9CKNI/46fwWuTsHx76y0vD4i9J6/TvPL7eYebaGBX9gkjHwuwhIk27qheNAHa3YiFQxAFXQ==",
+  "success": true,
+  "projectFilePath": "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/alperalanyali/.nuget/packages/mediatr/12.0.1/mediatr.12.0.1.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Entities\" />
+    <None Remove="Enums\" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\GenericRepositories\" />
+    <None Remove="Abstractions\" />
+    <None Remove="UnitOfWork\" />
+    <None Remove="Repositories\AppDbContext\" />
+    <None Remove="Repositories\CompanyRepository\" />
+    <None Remove="Repositories\Branch\" />
+    <None Remove="Repositories\CarBranchRepository\" />
+    <None Remove="Repositories\CarPhotoRepository\" />
+    <None Remove="Repositories\CarRepository\" />
+    <None Remove="Repositories\KLog\" />
+    <None Remove="Repositories\QuestionRepository\" />
+    <None Remove="Repositories\SurveyRepository\" />
+    <None Remove="Repositories\SurveyQuestionRepository\" />
+    <None Remove="Repositories\UserRoleRepository\" />
+    <None Remove="Dtos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\GenericRepositories\" />
+    <Folder Include="Abstractions\" />
+    <Folder Include="UnitOfWork\" />
+    <Folder Include="Repositories\AppDbContext\" />
+    <Folder Include="Repositories\CompanyRepository\" />
+    <Folder Include="Repositories\BranchRepository\" />
+    <Folder Include="Repositories\CarBranchRepository\" />
+    <Folder Include="Repositories\CarPhotoRepository\" />
+    <Folder Include="Repositories\CarRepository\" />
+    <Folder Include="Repositories\KLogRepository\" />
+    <Folder Include="Repositories\QuestionRepository\" />
+    <Folder Include="Repositories\SurveyRepository\" />
+    <Folder Include="Repositories\SurveyQuestionRepository\" />
+    <Folder Include="Repositories\UserRoleRepository\" />
+    <Folder Include="Dtos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+  </ItemGroup>
+</Project>
