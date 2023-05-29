@@ -169,3 +169,5 @@
 /Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/MediatR.Contracts.dll
 /Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/Application.dll
 /Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/Application.pdb
+/Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/AutoMapper.dll
+/Users/alperalanyali/Desktop/RentCarServer/Persistence/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

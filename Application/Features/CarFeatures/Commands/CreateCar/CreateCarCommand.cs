@@ -1,7 +1,7 @@
 ﻿using System;
 using Application.Messaging;
 
-namespace Application.Features.CarFeatures.CreateCar
+namespace Application.Features.CarFeatures.Commands.CreateCar
 {
 	public sealed record CreateCarCommand(
 		string LicenseNumber,

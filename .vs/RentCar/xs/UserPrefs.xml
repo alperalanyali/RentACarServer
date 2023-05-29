@@ -1,24 +1,62 @@
 ﻿<Properties StartupConfiguration="{9766A3A9-214D-43B0-9974-B9FAE0CB1BA6}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Application FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/WebApi/Controllers/AuthController.cs" relfile="WebApi/Controllers/AuthController.cs" line="32" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/Application/Features/AuthFeatures/UpdateUserCommand/UpdateUserCommandHandler.cs" relfile="Application/Features/AuthFeatures/UpdateUserCommand/UpdateUserCommandHandler.cs" line="18" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/Application/Features/AuthFeatures/LoginCommand/LoginCommandHandler.cs" relfile="Application/Features/AuthFeatures/LoginCommand/LoginCommandHandler.cs" line="17" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/Application/Features/CompanyFeatures/Commands/CreateCompanyCommand/CreateCompanyCommandHandler.cs" relfile="Application/Features/CompanyFeatures/Commands/CreateCompanyCommand/CreateCompanyCommandHandler.cs" line="20" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/Application/Features/CompanyFeatures/Commands/UpdateCompany/UpdateCompanyCommandHandler.cs" relfile="Application/Features/CompanyFeatures/Commands/UpdateCompany/UpdateCompanyCommandHandler.cs" line="20" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Controllers/CompanyController.cs">
+    <Files>
+      <File FileName="Application/Features/CompanyFeatures/Commands/UpdateCompany/UpdateCompanyCommand.cs" />
+      <File FileName="Application/Features/CompanyFeatures/Commands/UpdateCompany/UpdateCompanyCommandHandler.cs" />
+      <File FileName="WebApi/Controllers/CompanyController.cs" Line="31" Column="1" />
+      <File FileName="Persistence/Services/CompanyService.cs" />
+      <File FileName="Persistence/Repositories/GenericRepositories/AppGenericQueryRepository.cs" />
+      <File FileName="Application/Services/ICompanyService.cs" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentCar" expanded="True">
             <Node name="Application" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Services" selected="True" />
+              <Node name="Features" expanded="True">
+                <Node name="CompanyFeatures" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="CreateCompanyCommand" expanded="True" />
+                    <Node name="UpdateCompany" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
-            <Node name="Domain" expanded="True" />
+            <Node name="Domain" expanded="True">
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="Persistence" expanded="True">
+              <Node name="Context" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="UnitOfWork" expanded="True" />
+            </Node>
+            <Node name="WebApi" expanded="True">
+              <Node name="Abstractions" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="CompanyController.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

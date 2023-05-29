@@ -8,6 +8,7 @@ namespace Application.Services
 		Task CreateCarBranch(CarBranch carBranch, CancellationToken cancellationToken);
 		Task UpdateAsync(CarBranch carBranch, CancellationToken cancellationToken);
 		Task<CarBranch> GetById(Guid id);
+		Task<IList<CarBranch>> GetAll(string search);
 	}
 }
 

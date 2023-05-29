@@ -12,7 +12,17 @@ namespace Domain.Entities
 		public Car Car { get; set; }
 		public int Quantity { get; set; }
 
+		public CarBranch()
+		{
 
+		}
+
+		public CarBranch(string branchId,string carId)
+		{
+			Id = Guid.NewGuid();
+			BranchId = new Guid(branchId);
+			CarId = new Guid(carId);
+		}
 	}
 }
 

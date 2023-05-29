@@ -10,6 +10,18 @@ namespace Domain.Entities
 
 		public  Guid RoleId { get; set; }
 		public Role Role { get; set; }
+
+		public UserRole()
+		{
+
+		}
+
+		public UserRole(Guid userId,Guid roleId)
+		{
+			Id = Guid.NewGuid();
+			UserId = userId;
+			RoleId = roleId;
+		}
 	}
 }
 

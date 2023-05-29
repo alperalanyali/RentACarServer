@@ -2,6 +2,7 @@
 using Application.Services;
 using Domain.Entities;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Services
 {
@@ -12,9 +13,17 @@ namespace Persistence.Services
         {
             _userManager = userManager;
         }
-        public Task<User> GetByEmailorUsername(string emailOrUsername)
+
+        public async Task<bool> CheckPasswordAsync(User user, string password)
         {
-            throw new NotImplementedException();
+            var result = await _userManager.CheckPasswordAsync(user, password);
+            return result;
+        }
+
+        public async Task<User> GetByEmailorUsername(string emailOrUsername)
+        {
+            var user = await _userManager.Users.Where(p => p.Email == emailOrUsername || p.UserName == emailOrUsername).FirstOrDefaultAsync();
+            return user;
         }
     }
 }

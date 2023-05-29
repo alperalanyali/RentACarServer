@@ -8,6 +8,17 @@ namespace Domain.Entities
 	{
 		public Status Status { get; set; }
 
+
+		public Role()
+		{
+
+		}
+		public Role(string name)
+		{
+			Id = Guid.NewGuid();
+			Name = name;
+
+		}
 	}
 }
 

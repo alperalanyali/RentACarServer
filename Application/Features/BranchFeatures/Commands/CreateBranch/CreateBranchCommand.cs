@@ -4,6 +4,7 @@ using Application.Messaging;
 namespace Application.Features.BranchFeatures.Commands.CreateBranch
 {
 	public sealed record CreateBranchCommand(
+        string BranchName,
          string TaxNumber,
          string Address1, 
          string Address2 ,
