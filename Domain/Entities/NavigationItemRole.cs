@@ -11,6 +11,18 @@ namespace Domain.Entities
 		public Guid RoleId { get; set; }
 		public Role Role { get; set; }
 
+		public NavigationItemRole()
+		{
+
+		}
+
+		public NavigationItemRole(Guid navigationItemId,Guid roleId)
+		{
+			Id = Guid.NewGuid();
+			NavigationItemId = navigationItemId;
+			RoleId = roleId;
+
+		}
 	}
 }
 

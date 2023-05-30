@@ -4,8 +4,11 @@ using Domain.Repositories.BranchRepository;
 using Domain.Repositories.CarBranchRepository;
 using Domain.Repositories.CarPhotoRepository;
 using Domain.Repositories.CarRepository;
+using Domain.Repositories.CarRequestRepository;
 using Domain.Repositories.CompanyRepository;
 using Domain.Repositories.KLogRepository;
+using Domain.Repositories.NavigationItemRepository;
+using Domain.Repositories.NavigationItemRoleRepository;
 using Domain.Repositories.QuestionRepository;
 using Domain.Repositories.SurveyQuestionRepository;
 using Domain.Repositories.SurveyRepository;
@@ -15,8 +18,11 @@ using Persistence.Repositories.BranchRepository;
 using Persistence.Repositories.CarBrancRepository;
 using Persistence.Repositories.CarPhotoRepository;
 using Persistence.Repositories.CarRepository;
+using Persistence.Repositories.CarRequestRepository;
 using Persistence.Repositories.CompanyRepository;
 using Persistence.Repositories.KLogRepository;
+using Persistence.Repositories.NavigationItemRepository;
+using Persistence.Repositories.NavigationItemRoleRepository;
 using Persistence.Repositories.QuestionRepository;
 using Persistence.Repositories.SurveyQuestionRepository;
 using Persistence.Repositories.SurveyRepository;
@@ -45,6 +51,10 @@ namespace WebApi.Configurations
             services.AddScoped<ISurveyQuestionService, SurveyQuestionService>();
             services.AddScoped<ISurveyService, SurveyService>();
             services.AddScoped<IUserRoleService, UserRoleService>();
+            services.AddScoped<ICarRequestService, CarRequestService>();
+            services.AddScoped<INavigationItemService, NavigationItemService>();
+            services.AddScoped<INavigationItemRoleService, NavigationItemRoleService>();
+
 
             #region Repository
             services.AddScoped<IBranchCommandRepository, BranchCommandRepository>();
@@ -66,6 +76,12 @@ namespace WebApi.Configurations
             services.AddScoped<ISurveyCommandRepository, SurveyCommandRepository>();
             services.AddScoped<ISurveyQueryRepository, SurveyQueryRepository>();
             services.AddScoped<IUserRoleCommandRepository, UserRoleCommandRepository>();
+            services.AddScoped<ICarRequestCommandRepository, CarRequestCommandRepository>();
+            services.AddScoped<ICarRequestQueryRepository, CarRequestQueryRepository>();
+            services.AddScoped<INavigationItemCommandRepository, NavigationItemCommandRepository>();
+            services.AddScoped<NavigationItemQueryRepository, NavigationItemQueryRepository>();
+            services.AddScoped<INavigationItemRoleCommandRepository, NavigationItemRoleCommandRepository>();
+            services.AddScoped<INavigationItemRoleQueryRepository, NavigationItemRoleQueryRepository>();
             #endregion
             #endregion
         }

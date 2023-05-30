@@ -60,6 +60,24 @@
     <None Remove="Features\UserRoleFeatures\Commands\CreateUserRole\" />
     <None Remove="Features\UserRoleFeatures\Queries\GetAllUserRoles\" />
     <None Remove="Features\UserRoleFeatures\Queries\GetUserRolesByUserId\" />
+    <None Remove="Features\CarRequestFeatures\" />
+    <None Remove="Features\NavigationItemFeatures\" />
+    <None Remove="Features\CarRequestFeatures\Commands\" />
+    <None Remove="Features\CarRequestFeatures\Queries\" />
+    <None Remove="Features\CarRequestFeatures\Commands\CreateCarRequest\" />
+    <None Remove="Features\CarRequestFeatures\Commands\UpdateCarRequest\" />
+    <None Remove="Features\CarRequestFeatures\Commands\DeleteCarRequest\" />
+    <None Remove="Features\CarRequestFeatures\Queries\GetAllCarRequest\" />
+    <None Remove="Features\CarRequestFeatures\Queries\GetCarRequestsByCarId\" />
+    <None Remove="Features\NavigationItemFeatures\Commands\" />
+    <None Remove="Features\NavigationItemFeatures\Queries\" />
+    <None Remove="Features\NavigationItemFeatures\Commands\CreateNavigationItem\" />
+    <None Remove="Features\NavigationItemFeatures\Queries\GetAllNavigationItems\" />
+    <None Remove="Features\NavigationItemRoleFeatures\" />
+    <None Remove="Features\NavigationItemRoleFeatures\Commands\" />
+    <None Remove="Features\NavigationItemRoleFeatures\Queries\" />
+    <None Remove="Features\NavigationItemRoleFeatures\Commands\CreateNavigationItemRole\" />
+    <None Remove="Features\NavigationItemRoleFeatures\Queries\GetAllNavigationItemRole\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstractions\" />
@@ -114,6 +132,25 @@
     <Folder Include="Features\UserRoleFeatures\Commands\CreateUserRole\" />
     <Folder Include="Features\UserRoleFeatures\Queries\GetAllUserRoles\" />
     <Folder Include="Features\UserRoleFeatures\Queries\GetUserRolesByUserId\" />
+    <Folder Include="Features\CarRequestFeatures\" />
+    <Folder Include="Features\NavigationItemFeatures\" />
+    <Folder Include="Features\CarRequestFeatures\Commands\" />
+    <Folder Include="Features\CarRequestFeatures\Queries\" />
+    <Folder Include="Features\CarRequestFeatures\Commands\CreateCarRequest\" />
+    <Folder Include="Features\CarRequestFeatures\Commands\UpdateCarRequest\" />
+    <Folder Include="Features\CarRequestFeatures\Commands\DeleteCarRequest\" />
+    <Folder Include="Features\CarRequestFeatures\Queries\GetAllCarRequest\" />
+    <Folder Include="Features\CarRequestFeatures\Queries\GetCarRequestsByCarId\" />
+    <Folder Include="Features\NavigationItemFeatures\" />
+    <Folder Include="Features\NavigationItemFeatures\Commands\" />
+    <Folder Include="Features\NavigationItemFeatures\Queries\" />
+    <Folder Include="Features\NavigationItemFeatures\Commands\CreateNavigationItem\" />
+    <Folder Include="Features\NavigationItemFeatures\Queries\GetAllNavigationItems\" />
+    <Folder Include="Features\NavigationItemRoleFeatures\" />
+    <Folder Include="Features\NavigationItemRoleFeatures\Commands\" />
+    <Folder Include="Features\NavigationItemRoleFeatures\Queries\" />
+    <Folder Include="Features\NavigationItemRoleFeatures\Commands\CreateNavigationItemRole\" />
+    <Folder Include="Features\NavigationItemRoleFeatures\Queries\GetAllNavigationItemRole\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.1" />

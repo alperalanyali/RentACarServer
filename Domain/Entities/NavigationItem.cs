@@ -10,6 +10,19 @@ namespace Domain.Entities
 		public Guid TopNavBarId { get; set; }
 		public int Priority { get; set; }
 
+
+		public NavigationItem()
+		{
+
+		}
+		public NavigationItem(string navigationName,string navigationPath,Guid topNavbarId,int priority)
+		{
+			Id = Guid.NewGuid();
+			NavigationName = navigationName;
+			NavigationPath = navigationPath;
+			TopNavBarId = topNavbarId;
+			Priority = priority;
+		}
 	}
 }
 

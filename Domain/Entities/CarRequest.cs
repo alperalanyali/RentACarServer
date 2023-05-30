@@ -1,9 +1,10 @@
 ﻿using System;
+using Domain.Abstractions;
 using Domain.Enums;
 
 namespace Domain.Entities
 {
-	public class CarRequest
+	public class CarRequest: Entity
 	{
 		public Guid Id { get; set; }
 
@@ -18,6 +19,21 @@ namespace Domain.Entities
 		public DateTime RealDate { get; set; }
 
 		public Status Status { get; set; }
+
+		public CarRequest()
+		{
+
+		}
+		public CarRequest(string userId,string carID,DateTime bookingDate)
+		{
+			Id = Guid.NewGuid();
+			CarId = new Guid(carID);
+			UserId = new Guid(userId);
+			BookingDate = bookingDate;
+
+		}
+
+		
 	}
 }
 

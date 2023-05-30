@@ -23,6 +23,9 @@
     <None Remove="Repositories\UserRoleRepository\" />
     <None Remove="Services\" />
     <None Remove="UnitOfWork\" />
+    <None Remove="Repositories\NavigationItemRepository\" />
+    <None Remove="Repositories\NavigationItemRoleRepository\" />
+    <None Remove="Repositories\CarRequestRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
@@ -40,6 +43,9 @@
     <Folder Include="Repositories\UserRoleRepository\" />
     <Folder Include="Services\" />
     <Folder Include="UnitOfWork\" />
+    <Folder Include="Repositories\NavigationItemRepository\" />
+    <Folder Include="Repositories\NavigationItemRoleRepository\" />
+    <Folder Include="Repositories\CarRequestRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.5" />

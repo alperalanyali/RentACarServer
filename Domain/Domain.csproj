@@ -26,6 +26,8 @@
     <None Remove="Repositories\SurveyQuestionRepository\" />
     <None Remove="Repositories\UserRoleRepository\" />
     <None Remove="Dtos\" />
+    <None Remove="Repositories\NavigationItemRoleRepository\" />
+    <None Remove="Repositories\CarRequestRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -46,6 +48,8 @@
     <Folder Include="Repositories\SurveyQuestionRepository\" />
     <Folder Include="Repositories\UserRoleRepository\" />
     <Folder Include="Dtos\" />
+    <Folder Include="Repositories\NavigationItemRoleRepository\" />
+    <Folder Include="Repositories\CarRequestRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
