@@ -3,6 +3,7 @@ using Application.Services;
 using Domain.Entities;
 using Domain.Repositories.KLogRepository;
 using Domain.UnitOfWork;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Services
 {
@@ -12,23 +13,29 @@ namespace Persistence.Services
         private readonly IKLogQueryRepository _kLogQuery;
         private readonly IAppUnitOfWork _unitOfWork;
 
-        public KLogService()
+        public KLogService(IKLogCommandRepository kLogCommandRepository, IKLogQueryRepository kLogQueryRepository, IAppUnitOfWork appUnitOfWork)
         {
-
+            _klogCommand = kLogCommandRepository;
+            _kLogQuery = kLogQueryRepository;
+            _unitOfWork = appUnitOfWork;
         }
-        public Task CreateAsync(KLog klog, CancellationToken cancellationToken)
+        public async Task CreateAsync(KLog klog, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<KLog> GetById(Guid id)
-        {
-            throw new NotImplementedException();
+            await _klogCommand.AddAsync(klog, cancellationToken);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
 
-        public Task<IList<KLog>> GetList(string search)
+        public async Task<KLog> GetById(Guid id)
         {
-            throw new NotImplementedException();
+            var klog = await _kLogQuery.GetById(id.ToString());
+            return klog;
+        }
+
+        public async Task<IList<KLog>> GetList(string search)
+        {
+            var list = await _kLogQuery.GetAllAsync().ToListAsync();
+
+            return list;
         }
     }
 }

@@ -43,7 +43,8 @@ namespace Persistence.Services
 
         public async Task<IList<Branch>> GetListByCompanyId(Guid id)
         {
-            return await _branchQueryRepository.GetWhere(p => p.CompanyId == id).ToListAsync();
+            var branches = await _branchQueryRepository.GetWhere(p => p.CompanyId == id).ToListAsync();
+            return branches;
         }
 
         public async Task UpdateAsync(Branch branch, CancellationToken cancellation)

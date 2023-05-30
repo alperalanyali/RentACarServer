@@ -40,8 +40,8 @@ namespace WebApi.Controllers
             return Ok(response);
         }
 
-        [HttpPost("GetAll")]
-        public async Task<ActionResult> GetAll(GetBranchesByCompanyIdQuery request,CancellationToken cancellationToken)
+        [HttpPost("GetAllBranchByCompanyId")]
+        public async Task<ActionResult> GetAllBranchByCompanyId(GetBranchesByCompanyIdQuery request,CancellationToken cancellationToken)
         {
             var response = await _mediator.Send(request, cancellationToken);
             return Ok(response);

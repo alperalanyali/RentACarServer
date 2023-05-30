@@ -4,7 +4,7 @@ using Application.Services;
 
 namespace Application.Features.KlogFeatures.Queries.GetAll
 {
-	public class GetAllQueryHandler:IQueryHandler<GetAllQuery,GetAllQueryResponse>
+	public class GetAllQueryHandler:IQueryHandler<GetAllKLogQuery, GetAllQueryResponse>
 	{
 		private readonly IKLogService _klogService;
 		public GetAllQueryHandler(IKLogService kLogService)
@@ -12,7 +12,7 @@ namespace Application.Features.KlogFeatures.Queries.GetAll
 			_klogService = kLogService;
 		}
 
-        public async Task<GetAllQueryResponse> Handle(GetAllQuery request, CancellationToken cancellationToken)
+        public async Task<GetAllQueryResponse> Handle(GetAllKLogQuery request, CancellationToken cancellationToken)
         {
 			var result = await _klogService.GetList(request.search);
 			return new( result,true);

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Application.Services;
 using Domain.Entities;
 using Domain.Repositories.CarBranchRepository;
@@ -27,9 +28,12 @@ namespace Persistence.Services
 
         public async Task<IList<CarBranch>> GetAll(string search)
         {
-
-            var list = await _carBranchQuery.GetAllAsync().ToListAsync();
-            return  list;
+            var list = new List<CarBranch>();            
+            list  = await _carBranchQuery.GetAllAsync().Include(p => p.Branch).ThenInclude
+                (p => p.Company).Include(p => p.Car).ToListAsync();
+                
+        
+            return list;
         }
 
         public Task<CarBranch> GetById(Guid id)

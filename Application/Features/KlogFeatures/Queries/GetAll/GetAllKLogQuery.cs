@@ -3,7 +3,7 @@ using Application.Messaging;
 
 namespace Application.Features.KlogFeatures.Queries.GetAll
 {
-	public sealed record GetAllQuery(
+	public sealed record GetAllKLogQuery(
 		string search
 		):IQuery<GetAllQueryResponse>;
 	

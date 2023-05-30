@@ -23,6 +23,7 @@ namespace Persistence.Repositories.GenericRepositories
         public AppGenericQueryRepository(Context.AppDbContext context)
         {
             _context = context;
+            Entity = _context.Set<T>();
         }
 
         public IQueryable<T> GetAllAsync(bool isTracking = true)
