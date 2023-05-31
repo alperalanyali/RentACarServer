@@ -131,3 +131,4 @@
 /Users/alperalanyali/Desktop/RentCarServer/WebApi/obj/Debug/net7.0/ref/WebApi.dll
 /Users/alperalanyali/Desktop/RentCarServer/WebApi/bin/Debug/net7.0/Infrastructure.dll
 /Users/alperalanyali/Desktop/RentCarServer/WebApi/bin/Debug/net7.0/Infrastructure.pdb
+/Users/alperalanyali/Desktop/RentCarServer/WebApi/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

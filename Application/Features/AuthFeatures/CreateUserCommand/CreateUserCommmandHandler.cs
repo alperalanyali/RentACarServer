@@ -20,7 +20,9 @@ namespace Application.Features.AuthFeatures.CreateUserCommand
 				UserName = request.UserName,
 				Email = request.Email,
 				FullName = request.FullName,
-				Id = Guid.NewGuid()
+				Id = Guid.NewGuid(),
+				RefreshToken = ""
+			
 			},request.Password);
 			var response = new CreateUserCommmandResponse();
 			if (user != null)
