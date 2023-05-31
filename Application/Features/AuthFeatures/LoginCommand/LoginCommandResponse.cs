@@ -1,9 +1,15 @@
 ﻿using System;
+using Domain.Dtos;
+
 namespace Application.Features.AuthFeatures.LoginCommand
 {
 	public sealed record LoginCommandResponse(
-		string Message = "İşlem Başarılı"
-		);
+            TokenRefreshTokenDto Token,
+            string Email,
+            string UserId,
+            string FullName
+
+        );
 	
 }
 
