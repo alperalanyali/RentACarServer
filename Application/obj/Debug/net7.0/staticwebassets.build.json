@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WhsIPF/0mJ9/1KD5qvFZ7BiPqAuw81sf3+H/uRosrEs=",
+  "Hash": "fZUAjgchttl0gwzMuGy9FcX5qNDEilCyqvPSXRXwQKo=",
   "Source": "Application",
   "BasePath": "_content/Application",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "Domain",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "TargetFramework"
     }
   ],

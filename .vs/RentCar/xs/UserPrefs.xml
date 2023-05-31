@@ -1,37 +1,8 @@
 ﻿<Properties StartupConfiguration="{9766A3A9-214D-43B0-9974-B9FAE0CB1BA6}|https">
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Controllers/CarController.cs">
-    <Files>
-      <File FileName="Application/Features/BranchFeatures/Commands/UpdateBranch/UpdateBranchCommandHandler.cs" Line="25" Column="17" />
-      <File FileName="Application/Features/BranchFeatures/Commands/CreateBranch/CreateBranchCommandHandler.cs" Line="10" Column="24" />
-      <File FileName="WebApi/Controllers/CarController.cs" Line="25" Column="10" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="RentCar" expanded="True">
-            <Node name="Application" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Features" expanded="True">
-                <Node name="CarFeatures" expanded="True">
-                  <Node name="Commands" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Helpers" expanded="True" />
-            </Node>
-            <Node name="WebApi" expanded="True">
-              <Node name="Abstractions" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="CarController.cs" selected="True" />
-              </Node>
-              <Node name="Properties" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/WebApi/Controllers/AuthController.cs" relfile="WebApi/Controllers/AuthController.cs" line="32" column="1" />
@@ -39,9 +10,33 @@
       <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/Application/Features/AuthFeatures/LoginCommand/LoginCommandHandler.cs" relfile="Application/Features/AuthFeatures/LoginCommand/LoginCommandHandler.cs" line="17" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/Application/Features/CompanyFeatures/Commands/CreateCompanyCommand/CreateCompanyCommandHandler.cs" relfile="Application/Features/CompanyFeatures/Commands/CreateCompanyCommand/CreateCompanyCommandHandler.cs" line="20" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/Application/Features/CompanyFeatures/Commands/UpdateCompany/UpdateCompanyCommandHandler.cs" relfile="Application/Features/CompanyFeatures/Commands/UpdateCompany/UpdateCompanyCommandHandler.cs" line="20" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/Application/Features/BranchFeatures/Queries/GetBranchesByCompanyId/GetBranchesByCompanyIdQueryHandler.cs" relfile="Application/Features/BranchFeatures/Queries/GetBranchesByCompanyId/GetBranchesByCompanyIdQueryHandler.cs" line="16" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/Persistence/Services/BranchService.cs" relfile="Persistence/Services/BranchService.cs" line="46" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/RentCarServer/Application/Features/KlogFeatures/Queries/GetAll/GetAllQueryHandler.cs" relfile="Application/Features/KlogFeatures/Queries/GetAll/GetAllQueryHandler.cs" line="17" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Configurations/PersistenceDIServiceInstaller.cs">
+    <Files>
+      <File FileName="WebApi/Configurations/PersistenceDIServiceInstaller.cs" Line="74" Column="45" />
+      <File FileName="WebApi/Program.cs" Line="12" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RentCar" expanded="True">
+            <Node name="Application" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+            <Node name="WebApi" expanded="True">
+              <Node name="Abstractions" expanded="True" />
+              <Node name="Configurations" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

@@ -79,7 +79,7 @@ namespace WebApi.Configurations
             services.AddScoped<ICarRequestCommandRepository, CarRequestCommandRepository>();
             services.AddScoped<ICarRequestQueryRepository, CarRequestQueryRepository>();
             services.AddScoped<INavigationItemCommandRepository, NavigationItemCommandRepository>();
-            services.AddScoped<NavigationItemQueryRepository, NavigationItemQueryRepository>();
+            services.AddScoped<INavigationItemQueryRepository, NavigationItemQueryRepository>();
             services.AddScoped<INavigationItemRoleCommandRepository, NavigationItemRoleCommandRepository>();
             services.AddScoped<INavigationItemRoleQueryRepository, NavigationItemRoleQueryRepository>();
             #endregion
