@@ -1,39 +1,68 @@
 ﻿using System;
 using Application.Services;
 using Domain.Entities;
+using Domain.Repositories.UserRoleRepository;
+using Domain.UnitOfWork;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Services
 {
     public class UserRoleService : IUserRoleService
     {
-        public Task CreateAsync(UserRole userRole, CancellationToken cancellationToken)
+
+        private readonly IUserRoleCommandRepository _userRoleCommandRepository;
+        private readonly IUserRoleQueryRepository _userRoleQuery;
+        private readonly IAppUnitOfWork _unitOfWork;
+
+        public UserRoleService(IUserRoleCommandRepository userRoleCommandRepository, IUserRoleQueryRepository userRoleQueryRepository, IAppUnitOfWork appUnitOfWork )
         {
-            throw new NotImplementedException();
+            _userRoleCommandRepository = userRoleCommandRepository;
+            _userRoleQuery = userRoleQueryRepository;
+            _unitOfWork = appUnitOfWork;
         }
 
-        public Task GetById(Guid id)
+        public async Task CreateAsync(UserRole userRole, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            await _userRoleCommandRepository.AddAsync(userRole, cancellationToken);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
 
-        public Task<IList<UserRole>> GetList(string search)
+        public async Task<UserRole> GetById(Guid id)
         {
-            throw new NotImplementedException();
+            var userRole = await _userRoleQuery.GetById(id.ToString());
+            return userRole;
         }
 
-        public Task<IList<UserRole>> GetListByUserId(Guid userId)
+        public async Task<IList<UserRole>> GetList(string search)
         {
-            throw new NotImplementedException();
+            var list = await _userRoleQuery.GetAllAsync().Include(p => p.User).Include(p => p.Role).ToListAsync();
+            if (!string.IsNullOrEmpty(search))
+            {
+                list = await _userRoleQuery.GetWhere(p => !string.IsNullOrEmpty(search) && (
+                    (p.User.UserName.ToLower().Contains(search.ToLower()) )
+                    || (p.User.FullName.ToLower().Contains(search.ToLower()))
+                    || (p.Role.Name.ToLower().Contains(search.ToLower()))
+                )).Include(p => p.User).Include(p => p.Role).ToListAsync();
+            }
+            return list;
         }
 
-        public Task RemoveAsync(Guid id, CancellationToken cancellationToken)
+        public async Task<IList<UserRole>> GetListByUserId(Guid userId)
         {
-            throw new NotImplementedException();
+            return await _userRoleQuery.GetWhere(p => p.UserId == userId).Include(p => p.User).Include(p => p.Role).ToListAsync();
         }
 
-        public Task UpdateAsync(UserRole userRole, CancellationToken cancellationToken)
+        public async Task RemoveAsync(Guid id, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            await _userRoleCommandRepository.RemoveById(id);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+        }
+
+        public async Task UpdateAsync(UserRole userRole, CancellationToken cancellationToken)
+        {
+             _userRoleCommandRepository.Update(userRole);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+
         }
     }
 }

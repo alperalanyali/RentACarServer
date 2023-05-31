@@ -29,6 +29,12 @@ namespace Persistence.Services
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
 
+        public async Task DeleteById(Guid id, CancellationToken cancellationToken)
+        {
+            await _carCommand.RemoveById(id);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+        }
+
         public async Task<Car> GetById(Guid id)
         {
             return await _carQuery.GetById(id.ToString());
@@ -36,8 +42,15 @@ namespace Persistence.Services
 
         public async Task<IList<Car>> GetList(string search)
         {
-            return await _carQuery.GetWhere(p => (!string.IsNullOrEmpty(search) && (p.Model.ToLower().Contains(search.ToLower()
-                )))).ToListAsync();
+            var list = await _carQuery.GetAllAsync().ToListAsync();
+            if (!string.IsNullOrEmpty(search))
+            {
+                list = await _carQuery.GetWhere(p => !string.IsNullOrEmpty(search) && (p.LicenseNumber.ToLower().Contains(search.ToLower())
+                || (p.Model.ToLower().Contains(search.ToLower()))
+                )).ToListAsync();
+            }
+
+            return list;
         }
 
         public async Task UpdateCarAsync(Car car, CancellationToken cancellationToken)

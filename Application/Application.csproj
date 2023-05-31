@@ -23,7 +23,6 @@
     <None Remove="Features\CarFeatures\Commands\" />
     <None Remove="Features\CarFeatures\Quries\" />
     <None Remove="Features\CarFeatures\Commands\CreateCar\" />
-    <None Remove="Features\CarFeatures\Commands\UpdateCarCommand\" />
     <None Remove="Features\CarFeatures\Commands\RemoveCarCommand\" />
     <None Remove="Features\AuthFeatures\LoginCommand\" />
     <None Remove="Features\AuthFeatures\CreateUserCommand\" />
@@ -78,6 +77,22 @@
     <None Remove="Features\NavigationItemRoleFeatures\Queries\" />
     <None Remove="Features\NavigationItemRoleFeatures\Commands\CreateNavigationItemRole\" />
     <None Remove="Features\NavigationItemRoleFeatures\Queries\GetAllNavigationItemRole\" />
+    <None Remove="Features\CarBranchFeatures\Commands\UpdateCarBranch\" />
+    <None Remove="Features\CarBranchFeatures\Commands\DeleteCarBranch\" />
+    <None Remove="Features\CarBranchFeatures\Queries\GetCarBranchesByBranchId\" />
+    <None Remove="Features\CarBranchFeatures\Queries\GetCarBranchesByCarId\" />
+    <None Remove="Features\CarFeatures\Commands\UpdateCar\" />
+    <None Remove="Features\CarFeatures\Quries\GetAllCars\" />
+    <None Remove="Features\CarPhotoFeatures\Commands\UpdateCarPhoto\" />
+    <None Remove="Features\CarPhotoFeatures\Commands\DeleteCarPhoto\" />
+    <None Remove="Features\CarPhotoFeatures\Queries\GetAllCarPhotos\" />
+    <None Remove="Features\CompanyFeatures\Queries\GetAllCompanies\" />
+    <None Remove="Features\NavigationItemFeatures\Commands\UpdateNavigationItem\" />
+    <None Remove="Features\NavigationItemFeatures\Commands\DeleteNavigationItem\" />
+    <None Remove="Features\NavigationItemRoleFeatures\Commands\DeleteNavigationItemRole\" />
+    <None Remove="Features\NavigationItemRoleFeatures\Commands\UpdateNavigationItemRole\" />
+    <None Remove="Features\UserRoleFeatures\Commands\DeleteUserRole\" />
+    <None Remove="Features\UserRoleFeatures\Commands\UpdateUserRole\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstractions\" />
@@ -95,8 +110,6 @@
     <Folder Include="Features\CarFeatures\Commands\" />
     <Folder Include="Features\CarFeatures\Quries\" />
     <Folder Include="Features\CarFeatures\Commands\CreateCar\" />
-    <Folder Include="Features\CarFeatures\Commands\UpdateCarCommand\" />
-    <Folder Include="Features\CarFeatures\Commands\RemoveCarCommand\" />
     <Folder Include="Features\AuthFeatures\LoginCommand\" />
     <Folder Include="Features\AuthFeatures\CreateUserCommand\" />
     <Folder Include="Features\AuthFeatures\UpdateUserCommand\" />
@@ -151,6 +164,22 @@
     <Folder Include="Features\NavigationItemRoleFeatures\Queries\" />
     <Folder Include="Features\NavigationItemRoleFeatures\Commands\CreateNavigationItemRole\" />
     <Folder Include="Features\NavigationItemRoleFeatures\Queries\GetAllNavigationItemRole\" />
+    <Folder Include="Features\CarBranchFeatures\Commands\UpdateCarBranch\" />
+    <Folder Include="Features\CarBranchFeatures\Commands\DeleteCarBranch\" />
+    <Folder Include="Features\CarBranchFeatures\Queries\GetCarBranchesByBranchId\" />
+    <Folder Include="Features\CarBranchFeatures\Queries\GetCarBranchesByCarId\" />
+    <Folder Include="Features\CarFeatures\Commands\UpdateCar\" />
+    <Folder Include="Features\CarFeatures\Quries\GetAllCars\" />
+    <Folder Include="Features\CarPhotoFeatures\Commands\UpdateCarPhoto\" />
+    <Folder Include="Features\CarPhotoFeatures\Commands\DeleteCarPhoto\" />
+    <Folder Include="Features\CarPhotoFeatures\Queries\GetAllCarPhotos\" />
+    <Folder Include="Features\CompanyFeatures\Queries\GetAllCompanies\" />
+    <Folder Include="Features\NavigationItemFeatures\Commands\UpdateNavigationItem\" />
+    <Folder Include="Features\NavigationItemFeatures\Commands\DeleteNavigationItem\" />
+    <Folder Include="Features\NavigationItemRoleFeatures\Commands\DeleteNavigationItemRole\" />
+    <Folder Include="Features\NavigationItemRoleFeatures\Commands\UpdateNavigationItemRole\" />
+    <Folder Include="Features\UserRoleFeatures\Commands\DeleteUserRole\" />
+    <Folder Include="Features\UserRoleFeatures\Commands\UpdateUserRole\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.1" />

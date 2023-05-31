@@ -8,7 +8,7 @@ namespace Application.Services
 		Task CreateAsync(UserRole userRole, CancellationToken cancellationToken);
 		Task UpdateAsync(UserRole userRole, CancellationToken cancellationToken);
 		Task RemoveAsync(Guid id, CancellationToken cancellationToken);
-		Task GetById(Guid id);
+		Task<UserRole> GetById(Guid id);
 		Task<IList<UserRole>> GetList(string search);
 		Task<IList<UserRole>> GetListByUserId(Guid userId);
 	}

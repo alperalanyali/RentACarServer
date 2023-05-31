@@ -34,11 +34,14 @@ namespace Persistence.Services
 
         public async Task<IList<CarRequest>> GetAll(string search)
         {
-            var list = await _CarRequestQuery.GetWhere(p => !string.IsNullOrEmpty(search) && (
-            p.Car.LicenseNumber.ToLower().Contains(search.ToLower())
-            || p.Car.Model.ToLower().Contains(search.ToLower())
-            )).ToListAsync();
-
+            var list = await _CarRequestQuery.GetAllAsync().Include(p => p.Car).ToListAsync();
+            if (!string.IsNullOrEmpty(search))
+            {
+                list = await _CarRequestQuery.GetWhere(p => !string.IsNullOrEmpty(search) && (
+                p.Car.LicenseNumber.ToLower().Contains(search.ToLower())
+                || p.Car.Model.ToLower().Contains(search.ToLower())
+                )).Include(p => p.Car).ToListAsync();
+            }
             return list;
         }
 
@@ -50,7 +53,7 @@ namespace Persistence.Services
 
         public async Task<IList<CarRequest>> GetCarRequestsByCarId(Guid carId)
         {
-            var list = await _CarRequestQuery.GetWhere(p => p.CarId == carId).ToListAsync();
+            var list = await _CarRequestQuery.GetWhere(p => p.CarId == carId).Include(p => p.Car).ToListAsync();
             return list;
         }
 

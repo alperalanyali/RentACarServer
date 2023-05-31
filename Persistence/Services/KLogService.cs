@@ -34,7 +34,14 @@ namespace Persistence.Services
         public async Task<IList<KLog>> GetList(string search)
         {
             var list = await _kLogQuery.GetAllAsync().ToListAsync();
-
+            if (!string.IsNullOrEmpty(search))
+            {
+                list = await _kLogQuery.GetWhere(p => !string.IsNullOrEmpty(search) && (
+                (p.FunctionName.ToLower().Contains(search.ToLower())
+                || (p.Message.ToLower().Contains(search.ToLower()))
+                ||(p.StackTrace.ToLower().Contains(search.ToLower()))
+                ))).ToListAsync();
+            }
             return list;
         }
     }

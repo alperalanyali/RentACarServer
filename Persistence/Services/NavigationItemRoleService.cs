@@ -35,17 +35,38 @@ namespace Persistence.Services
 
         public async Task<IList<NavigationItemRole>> GetAll(string search)
         {
-            var list = await _navigationItemRoleQuery.GetWhere(p => !string.IsNullOrEmpty(search) && (
+            var list = await _navigationItemRoleQuery.GetAllAsync().Include(p => p.NavigationItem).Include(p => p.Role).ToListAsync();
+            if (!String.IsNullOrEmpty(search))
+            {
+                list = await _navigationItemRoleQuery.GetWhere(p => !string.IsNullOrEmpty(search) && (
                 p.NavigationItem.NavigationName.ToLower().Contains(search.ToLower())
                 || p.Role.Name.ToLower().Contains(search.ToLower())
             )).Include(p => p.Role).Include(p => p.NavigationItem).ToListAsync();
 
+            }
+
             return list;
         }
 
-        public async Task<IList<NavigationItemRole>> GetNavigationItemRoleByRoleId(Guid roleId)
+        public async Task<NavigationItemRole> GetById(Guid id)
         {
-            var list = await _navigationItemRoleQuery.GetWhere(p => p.RoleId == roleId).Include(p => p.Role).Include(p => p.NavigationItem).ToListAsync();
+            var navItemRole = await _navigationItemRoleQuery.GetById(id.ToString());
+            return navItemRole;
+        }
+
+        public async Task<IList<NavigationItemRole>> GetNavigationItemRoleByRoleId(Guid roleId,string search)
+        {
+            var list = await _navigationItemRoleQuery.GetAllAsync().Include(p => p.NavigationItem).Include(p => p.Role).ToListAsync();
+            if (!string.IsNullOrEmpty(search))
+            {
+                list = await _navigationItemRoleQuery.GetWhere(p => p.RoleId == roleId && (
+                 !string.IsNullOrEmpty(search) && (
+                    p.NavigationItem.NavigationName.ToLower().Contains(search.ToLower())
+                    || p.NavigationItem.NavigationPath.ToLower().Contains(search.ToLower())
+                 )
+                )).Include(p => p.Role).Include(p => p.NavigationItem).ToListAsync();
+            }
+            
             return list;
         }
 

@@ -12,6 +12,8 @@ namespace Application.Services
 		Task UpdateAsync(Branch branch,CancellationToken cancellation);
 		Task<IList<Branch>> GetList(string search);
 		Task<IList<Branch>> GetListByCompanyId(Guid id);
+		Task<Branch> GetById(Guid id);
+		Task DeleteById(Guid id,CancellationToken cancellationToken);
 		
 	}
 }

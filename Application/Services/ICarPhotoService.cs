@@ -9,6 +9,8 @@ namespace Application.Services
 		Task UpdateAsync(CarPhoto carPhoto, CancellationToken cancellationToken);
 		Task<CarPhoto> GetById(Guid id);
 		Task<IList<CarPhoto>> GetCarPhotosByCarId(Guid carPhotoId);
+		Task<IList<CarPhoto>> GetAllCarPhotos(string search);
+		Task DeleteById(Guid id, CancellationToken cancellationToken);
 
 	}
 }

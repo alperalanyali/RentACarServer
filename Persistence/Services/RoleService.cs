@@ -1,34 +1,50 @@
 ﻿using System;
 using Application.Services;
 using Domain.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Services
 {
     public class RoleService : IRoleService
     {
-        public Task CreateAsync(Role role, CancellationToken cancellationToken)
+        private readonly RoleManager<Role> _roleManager;
+        public RoleService(RoleManager<Role>  roleManager)
         {
-            throw new NotImplementedException();
+            _roleManager = roleManager;
+        }
+        public async Task CreateAsync(Role role, CancellationToken cancellationToken)
+        {
+            await _roleManager.CreateAsync(role);
         }
 
-        public Task DeleteRole(Guid id, CancellationToken cancellationToken)
+        public async Task DeleteRole(Guid id, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var role = await _roleManager.FindByIdAsync(id.ToString());
+            await _roleManager.DeleteAsync(role);
         }
 
-        public Task<Role> GetById(Guid id)
+        public async Task<Role> GetById(Guid id)
         {
-            throw new NotImplementedException();
+            var role = await _roleManager.Roles.Where(p => p.Id == id).FirstOrDefaultAsync();
+            return role;
         }
 
-        public Task<IList<Role>> GetList(string search)
+        public async Task<IList<Role>> GetList(string search)
         {
-            throw new NotImplementedException();
+            var list = await _roleManager.Roles.ToListAsync();
+            if (!string.IsNullOrEmpty(search))
+            {
+                list = await _roleManager.Roles.Where(p => !string.IsNullOrEmpty(search) && (
+                       p.Name.ToLower().Contains(search.ToLower())
+                )).ToListAsync();
+            }
+            return (IList<Role>)list;
         }
 
-        public Task UpdateAsync(Role role, CancellationToken cancellationToken)
+        public async Task UpdateAsync(Role role, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            await _roleManager.UpdateAsync(role);
         }
     }
 }

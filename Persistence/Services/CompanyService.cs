@@ -34,9 +34,14 @@ namespace Persistence.Services
 
         public async Task<IList<Company>> GetList(string search)
         {
-            return await _companyQuery.GetWhere(p => (!string.IsNullOrEmpty(search)) && (
+            var list = await _companyQuery.GetAllAsync().ToListAsync();
+            if (!string.IsNullOrEmpty(search))
+            {
+                list = await _companyQuery.GetWhere(p => (!string.IsNullOrEmpty(search)) && (
                 p.CompanyName.ToLower().Contains(search.ToLower())
             )).ToListAsync();
+            }            
+            return list;
         }
 
         public async Task UpdateAsync(Company company, CancellationToken cancellationToken)

@@ -7,6 +7,7 @@ using Application.Features.BranchFeatures.Commands.RemoveBranch;
 using Application.Features.BranchFeatures.Commands.UpdateBranch;
 using Application.Features.BranchFeatures.Queries.GetBranchesByCompanyId;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Abstractions;
 
@@ -14,6 +15,7 @@ using WebApi.Abstractions;
 
 namespace WebApi.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     public class BranchController : ApiController
     {
         public BranchController(IMediator mediator) : base(mediator)

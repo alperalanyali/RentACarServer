@@ -29,16 +29,33 @@ namespace Persistence.Services
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
 
+        public async Task DeleteById(Guid id, CancellationToken cancellationToken)
+        {
+            _branchCommandRepository.RemoveById(id);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+        }
+
         public async Task<Branch> GetBranchDetailById(Guid id)
         {
             return await _branchQueryRepository.GetById(id.ToString());
         }
 
+        public async Task<Branch> GetById(Guid id)
+        {
+            var branch = await _branchQueryRepository.GetById(id.ToString());
+            return branch;
+        }
+
         public async Task<IList<Branch>> GetList(string search)
         {
-            return await _branchQueryRepository.GetWhere(p =>(!string.IsNullOrEmpty(search)) &&(
+            var list = await _branchQueryRepository.GetAllAsync().ToListAsync();
+            if (!string.IsNullOrEmpty(search))
+            {
+                list = await _branchQueryRepository.GetWhere(p => (!string.IsNullOrEmpty(search)) && (
                 p.Company.CompanyName.ToLower().Contains(search.ToLower()) || p.BranchName.ToLower().Contains(search.ToLower())
                 )).ToListAsync();
+            }
+            return list;
         }
 
         public async Task<IList<Branch>> GetListByCompanyId(Guid id)

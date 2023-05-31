@@ -10,6 +10,7 @@ namespace Application.Services
 		Task UpdateCarAsync(Car car, CancellationToken cancellationToken);
 		Task<Car> GetById(Guid id);
 		Task<IList<Car>> GetList(string search);
+		Task DeleteById(Guid id, CancellationToken cancellationToken);
 	}
 }
 

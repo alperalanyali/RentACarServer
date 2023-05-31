@@ -13,9 +13,19 @@ namespace Application.Features.BranchFeatures.Commands.RemoveBranch
             _branchService = branchService;
 		}
 
-        public Task<RemoveBranchCommandResponse> Handle(RemoveBranchCommand request, CancellationToken cancellationToken)
+        public async Task<RemoveBranchCommandResponse> Handle(RemoveBranchCommand request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var branch = _branchService.GetById(request.id);
+            var response = new RemoveBranchCommandResponse();
+            if(branch != null)
+            {
+                await _branchService.DeleteById(request.id, cancellationToken);
+            }else
+            {
+                response = new RemoveBranchCommandResponse("Böyle bir kayıt yoktur");
+            }
+
+            return response;
         }
     }
 }

@@ -35,9 +35,20 @@ namespace Persistence.Services
 
         public async Task<IList<NavigationItem>> GetAll(string search)
         {
-            var list = await _navigationItemQuery.GetWhere(p => !string.IsNullOrEmpty(search) && ( p.NavigationName.ToLower().Contains(search.ToLower())
-            )).ToListAsync();
+            var list = await _navigationItemQuery.GetAllAsync().ToListAsync();
+            if (!string.IsNullOrEmpty(search))
+            {
+                list = await _navigationItemQuery.GetWhere(p => !string.IsNullOrEmpty(search) && (p.NavigationName.ToLower().Contains(search.ToLower())
+               || (p.NavigationPath.ToLower().Contains(search.ToLower()))
+               )).ToListAsync();
+            }
             return list;
+        }
+
+        public async Task<NavigationItem> GetById(Guid id)
+        {
+            var navItem = await _navigationItemQuery.GetById(id.ToString());
+            return navItem;
         }
 
         public async Task Update(NavigationItem navigationItem, CancellationToken cancellationToken)

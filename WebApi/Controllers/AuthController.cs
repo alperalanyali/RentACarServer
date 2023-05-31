@@ -6,6 +6,7 @@ using Application.Features.AuthFeatures.CreateUserCommand;
 using Application.Features.AuthFeatures.LoginCommand;
 using Application.Features.AuthFeatures.UpdateUserCommand;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Abstractions;
 
@@ -26,13 +27,14 @@ namespace WebApi.Controllers
             return Ok(response);
 
         }
+     
         [HttpPost("createUser")]
         public async Task<IActionResult> CreateNewUser(CreateUserCommmand request,CancellationToken cancellationToken)
         {
             var response = await _mediator.Send(request, cancellationToken);
             return Ok(response);
         }
-
+        [Authorize(AuthenticationSchemes = "Bearer")]
         [HttpPost("updateUser")]
         public async Task<IActionResult> UpdateUser(UpdateUserCommand request,CancellationToken cancellationToken)
         {
