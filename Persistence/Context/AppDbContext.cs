@@ -30,6 +30,7 @@ namespace Persistence.Context
         public DbSet<SurveyQuestion> SurveyQuestions { get; set; }
         public DbSet<NavigationItem> NavigationItems { get; set;}
         public DbSet<NavigationItemRole> NavigationItemRoles { get; set; }
+        public DbSet<Language> Languages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

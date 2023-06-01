@@ -26,6 +26,7 @@
     <None Remove="Repositories\NavigationItemRepository\" />
     <None Remove="Repositories\NavigationItemRoleRepository\" />
     <None Remove="Repositories\CarRequestRepository\" />
+    <None Remove="Repositories\LanguageRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
@@ -46,6 +47,7 @@
     <Folder Include="Repositories\NavigationItemRepository\" />
     <Folder Include="Repositories\NavigationItemRoleRepository\" />
     <Folder Include="Repositories\CarRequestRepository\" />
+    <Folder Include="Repositories\LanguageRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.5" />
