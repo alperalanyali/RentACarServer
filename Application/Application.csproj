@@ -93,6 +93,7 @@
     <None Remove="Features\NavigationItemRoleFeatures\Commands\UpdateNavigationItemRole\" />
     <None Remove="Features\UserRoleFeatures\Commands\DeleteUserRole\" />
     <None Remove="Features\UserRoleFeatures\Commands\UpdateUserRole\" />
+    <None Remove="Features\NavigationItemRoleFeatures\Queries\GetNavigationItemRolesByUserId\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstractions\" />
@@ -180,6 +181,7 @@
     <Folder Include="Features\NavigationItemRoleFeatures\Commands\UpdateNavigationItemRole\" />
     <Folder Include="Features\UserRoleFeatures\Commands\DeleteUserRole\" />
     <Folder Include="Features\UserRoleFeatures\Commands\UpdateUserRole\" />
+    <Folder Include="Features\NavigationItemRoleFeatures\Queries\GetNavigationItemRolesByUserId\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.1" />

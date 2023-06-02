@@ -54,7 +54,7 @@ namespace WebApi.Configurations
             services.AddScoped<ICarRequestService, CarRequestService>();
             services.AddScoped<INavigationItemService, NavigationItemService>();
             services.AddScoped<INavigationItemRoleService, NavigationItemRoleService>();
-
+            
 
             #region Repository
             services.AddScoped<IBranchCommandRepository, BranchCommandRepository>();
@@ -76,6 +76,7 @@ namespace WebApi.Configurations
             services.AddScoped<ISurveyCommandRepository, SurveyCommandRepository>();
             services.AddScoped<ISurveyQueryRepository, SurveyQueryRepository>();
             services.AddScoped<IUserRoleCommandRepository, UserRoleCommandRepository>();
+            services.AddScoped<IUserRoleQueryRepository, UserRoleQueryRepository>();
             services.AddScoped<ICarRequestCommandRepository, CarRequestCommandRepository>();
             services.AddScoped<ICarRequestQueryRepository, CarRequestQueryRepository>();
             services.AddScoped<INavigationItemCommandRepository, NavigationItemCommandRepository>();

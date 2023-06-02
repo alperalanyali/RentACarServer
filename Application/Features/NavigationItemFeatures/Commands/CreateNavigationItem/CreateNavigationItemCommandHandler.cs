@@ -15,7 +15,8 @@ namespace Application.Features.NavigationItemFeatures.Commands.CreateNavigationI
 
         public async Task<CreateNavigationItemCommandResponse> Handle(CreateNavigationItemCommand request, CancellationToken cancellationToken)
         {
-            var navigationItem = new NavigationItem(request.navigationName,request.navigationPath,request.topNavBarId,request.Priority);
+
+            var navigationItem = new NavigationItem(request.navigationName,request.navigationPath, request.topNavBarId, request.Priority);
 
             await _navigationItemService.CreateAsync(navigationItem, cancellationToken);
             return new();

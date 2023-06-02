@@ -8,7 +8,7 @@ namespace Application.Features.NavigationItemFeatures.Commands.UpdateNavigationI
 		public Guid Id { get; set; }
         public string NavigationName { get; set; }
         public string NavigationPath { get; set; }
-        public Guid TopNavBarId { get; set; }
+        public string TopNavBarId { get; set; }
         public int Priority { get; set; }
     }
 }

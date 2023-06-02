@@ -11,6 +11,7 @@ namespace Application.Services
 		Task Delete(Guid id,CancellationToken cancellationToken);
 		Task<IList<NavigationItem>> GetAll(string search);
 		Task<NavigationItem> GetById(Guid id);
+		Task<List<NavigationItem>> GetNavigationItemsByTopBarId(string topNavBarId);
 	}
 }
 

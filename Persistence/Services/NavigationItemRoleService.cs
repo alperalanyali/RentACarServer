@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using Application.Services;
 using Domain.Entities;
 using Domain.Repositories.NavigationItemRoleRepository;
@@ -12,13 +12,15 @@ namespace Persistence.Services
 
         private readonly INavigationItemRoleCommandRepository _navigationItemRoleCommand;
         private readonly INavigationItemRoleQueryRepository _navigationItemRoleQuery;
+        private readonly IUserRoleService _userRoleService;
         private readonly IAppUnitOfWork _unitOfWork;
 
-        public NavigationItemRoleService(INavigationItemRoleCommandRepository navigationItemRoleCommandRepository, INavigationItemRoleQueryRepository navigationItemRoleQuery, IAppUnitOfWork appUnitOfWork)
+        public NavigationItemRoleService(INavigationItemRoleCommandRepository navigationItemRoleCommandRepository, INavigationItemRoleQueryRepository navigationItemRoleQuery,IUserRoleService userRoleService, IAppUnitOfWork appUnitOfWork)
         {
             _navigationItemRoleCommand = navigationItemRoleCommandRepository;
             _navigationItemRoleQuery = navigationItemRoleQuery;
             _unitOfWork = appUnitOfWork;
+            _userRoleService = userRoleService;
         }
 
         public async Task Create(NavigationItemRole navigationItemRole, CancellationToken cancellationToken)
@@ -68,6 +70,11 @@ namespace Persistence.Services
             }
             
             return list;
+        }
+
+        public async Task<IList<NavigationItemRole>> GetNavigationItemRoleByUserId(Guid roleId)
+        {                       
+            return await _navigationItemRoleQuery.GetWhere(p => p.RoleId == roleId).Include(p => p.NavigationItem).OrderBy(p => p.NavigationItem.Priority).ToListAsync();
         }
 
         public async Task Update(NavigationItemRole navigationItem, CancellationToken cancellationToken)

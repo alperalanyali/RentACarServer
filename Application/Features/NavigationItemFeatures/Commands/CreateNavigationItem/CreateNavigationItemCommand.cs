@@ -6,7 +6,7 @@ namespace Application.Features.NavigationItemFeatures.Commands.CreateNavigationI
 	public sealed record CreateNavigationItemCommand(
 		string navigationName,
 		string navigationPath,
-		Guid topNavBarId,
+		string topNavBarId,
 		int Priority
 
 		):ICommand<CreateNavigationItemCommandResponse>;

@@ -7,7 +7,7 @@ namespace Domain.Entities
 	{
 		public string NavigationName { get; set; }
 		public string NavigationPath { get; set; }
-		public Guid TopNavBarId { get; set; }
+		public string TopNavBarId { get; set; }
 		public int Priority { get; set; }
 
 
@@ -15,7 +15,7 @@ namespace Domain.Entities
 		{
 
 		}
-		public NavigationItem(string navigationName,string navigationPath,Guid topNavbarId,int priority)
+		public NavigationItem(string navigationName,string navigationPath,string topNavbarId,int priority)
 		{
 			Id = Guid.NewGuid();
 			NavigationName = navigationName;

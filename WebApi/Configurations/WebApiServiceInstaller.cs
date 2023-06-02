@@ -12,7 +12,7 @@ namespace WebApi.Configurations
             services.AddCors(options => options.AddDefaultPolicy(
                 options =>
                 {
-                    options.AllowAnyHeader().AllowAnyMethod().AllowCredentials().SetIsOriginAllowed(options => true);
+                                                                    options.AllowAnyHeader().AllowAnyMethod().AllowCredentials().SetIsOriginAllowed(options => true);
                 }
                 ));
 
