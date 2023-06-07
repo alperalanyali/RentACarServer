@@ -1,21 +1,35 @@
 ﻿<Properties StartupConfiguration="{9766A3A9-214D-43B0-9974-B9FAE0CB1BA6}|https">
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/LanguageService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/NavigationItemRoleService.cs">
     <Files>
-      <File FileName="Persistence/Services/Language.cs" Line="29" Column="22" />
+      <File FileName="Persistence/Services/NavigationItemRoleService.cs" Line="81" Column="10" />
+      <File FileName="Application/Features/NavigationItemRoleFeatures/Queries/GetNavigationItemRolesByUserId/GetNavigationItemRolesByUserIdQueryHandler.cs" Line="45" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentCar" expanded="True">
-            <Node name="Application" expanded="True" />
+            <Node name="Application" expanded="True">
+              <Node name="Features" expanded="True">
+                <Node name="NavigationItemRoleFeatures" expanded="True">
+                  <Node name="Queries" expanded="True">
+                    <Node name="GetNavigationItemRolesByUserId" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
             <Node name="Domain" expanded="True" />
             <Node name="Persistence" expanded="True">
               <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="WebApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -23,6 +37,4 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
