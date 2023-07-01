@@ -31,6 +31,8 @@ namespace Persistence.Context
         public DbSet<NavigationItem> NavigationItems { get; set;}
         public DbSet<NavigationItemRole> NavigationItemRoles { get; set; }
         public DbSet<Language> Languages { get; set; }
+        public DbSet<UserCompany> UserCompanies { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

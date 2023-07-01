@@ -2,6 +2,7 @@
 using Application.Abstractions;
 using Application.Messaging;
 using Application.Services;
+using Domain.Dtos;
 using Domain.Entities;
 
 namespace Application.Features.AuthFeatures.LoginCommand
@@ -20,12 +21,17 @@ namespace Application.Features.AuthFeatures.LoginCommand
         {
             User user = await _authService.GetByEmailorUsername(request.emailOrUserName);
             if (user == null)
-                throw new Exception("Kullanıcı bulunamadı");
+                return new LoginCommandResponse(null, "", "", "",null, "Kullanıcı bulunamadi");
             var checkUserPass = await _authService.CheckPasswordAsync(user, request.password);
-            if (!checkUserPass)
-                throw new Exception("Şifreniz yanlış");
-            LoginCommandResponse response = new LoginCommandResponse(Token: await _jwtProvider.CreateToken(user), Email: user.Email, UserId: user.Id.ToString(), FullName: user.FullName);
-
+            if (!checkUserPass)                
+                return new LoginCommandResponse(null, "", "", "",null ,"Şifreniz yanlış");
+            List<RoleDto> roleDtos = new List<RoleDto>();
+            foreach(var role in user.UserRoles)
+            {
+                var roleDto = new RoleDto(role.Role.Name);
+                roleDtos.Add(roleDto);
+            }
+            LoginCommandResponse response = new LoginCommandResponse(Token: await _jwtProvider.CreateToken(user), Email: user.Email, UserId: user.Id.ToString(), FullName: user.FullName,roleDtos);
             return response;
 
             

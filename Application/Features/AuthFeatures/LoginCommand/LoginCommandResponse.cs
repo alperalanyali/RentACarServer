@@ -7,7 +7,9 @@ namespace Application.Features.AuthFeatures.LoginCommand
             TokenRefreshTokenDto Token,
             string Email,
             string UserId,
-            string FullName
+            string FullName,
+            IList<RoleDto> RoleDtos,
+            string Error=""
 
         );
 	

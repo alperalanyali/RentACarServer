@@ -12,6 +12,7 @@ using Domain.Repositories.NavigationItemRoleRepository;
 using Domain.Repositories.QuestionRepository;
 using Domain.Repositories.SurveyQuestionRepository;
 using Domain.Repositories.SurveyRepository;
+using Domain.Repositories.UserCompanyRepository;
 using Domain.Repositories.UserRoleRepository;
 using Domain.UnitOfWork;
 using Persistence.Repositories.BranchRepository;
@@ -26,6 +27,7 @@ using Persistence.Repositories.NavigationItemRoleRepository;
 using Persistence.Repositories.QuestionRepository;
 using Persistence.Repositories.SurveyQuestionRepository;
 using Persistence.Repositories.SurveyRepository;
+using Persistence.Repositories.UserCompanyRepository;
 using Persistence.Repositories.UserRoleRepository;
 using Persistence.Services;
 using Persistence.UnitOfWork;
@@ -54,7 +56,7 @@ namespace WebApi.Configurations
             services.AddScoped<ICarRequestService, CarRequestService>();
             services.AddScoped<INavigationItemService, NavigationItemService>();
             services.AddScoped<INavigationItemRoleService, NavigationItemRoleService>();
-            
+            services.AddScoped<IUserCompanyService, UserCompanyService>();
 
             #region Repository
             services.AddScoped<IBranchCommandRepository, BranchCommandRepository>();
@@ -83,6 +85,8 @@ namespace WebApi.Configurations
             services.AddScoped<INavigationItemQueryRepository, NavigationItemQueryRepository>();
             services.AddScoped<INavigationItemRoleCommandRepository, NavigationItemRoleCommandRepository>();
             services.AddScoped<INavigationItemRoleQueryRepository, NavigationItemRoleQueryRepository>();
+            services.AddScoped<IUserCompanyCommandRepository, UserCompanyCommandRepository>();
+            services.AddScoped<IUserCompanyQueryRepository, UserCompanyQueryRepository>();
             #endregion
             #endregion
         }

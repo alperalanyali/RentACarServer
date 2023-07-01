@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.CompanyFeatures.Commands.CreateCompanyCommand;
 using Application.Features.CompanyFeatures.Commands.UpdateCompany;
+using Application.Features.CompanyFeatures.Queries.GetAllCompanies;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Abstractions;
@@ -31,6 +32,13 @@ namespace WebApi.Controllers
             var response = await _mediator.Send(request, cancellationToken);
             return Ok(response);
 
+        }
+
+        [HttpPost("GetList")]
+        public async Task<ActionResult> GetAll(GetAllCompaniesQuery request)
+        {
+            var response = await _mediator.Send(request);
+            return Ok(response);
         }
     }
 }

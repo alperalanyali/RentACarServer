@@ -22,7 +22,7 @@ namespace Persistence.Services
 
         public async Task<User> GetByEmailorUsername(string emailOrUsername)
         {
-            var user = await _userManager.Users.Where(p => p.Email == emailOrUsername || p.UserName == emailOrUsername).FirstOrDefaultAsync();
+            var user = await _userManager.Users.Where(p => p.Email == emailOrUsername || p.UserName == emailOrUsername).Include(p => p.UserRoles).ThenInclude(p => p.Role).FirstOrDefaultAsync();
             return user;
         }
     }

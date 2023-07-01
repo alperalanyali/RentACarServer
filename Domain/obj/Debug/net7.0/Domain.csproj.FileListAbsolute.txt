@@ -77,8 +77,6 @@
 /Users/alperalanyali/Desktop/RentACarServer/Domain/bin/Debug/net7.0/Domain
 /Users/alperalanyali/Desktop/RentACarServer/Domain/bin/Debug/net7.0/Domain.deps.json
 /Users/alperalanyali/Desktop/RentACarServer/Domain/bin/Debug/net7.0/Domain.runtimeconfig.json
-/Users/alperalanyali/Desktop/RentACarServer/Domain/bin/Debug/net7.0/Domain.dll
-/Users/alperalanyali/Desktop/RentACarServer/Domain/bin/Debug/net7.0/Domain.pdb
 /Users/alperalanyali/Desktop/RentACarServer/Domain/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 /Users/alperalanyali/Desktop/RentACarServer/Domain/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /Users/alperalanyali/Desktop/RentACarServer/Domain/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -94,7 +92,6 @@
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/Domain.AssemblyInfoInputs.cache
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/Domain.AssemblyInfo.cs
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/Domain.csproj.CoreCompileInputs.cache
-/Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/Domain.MvcApplicationPartsAssemblyInfo.cache
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/staticwebassets/msbuild.Domain.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/staticwebassets/msbuild.build.Domain.props
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Domain.props
@@ -104,8 +101,11 @@
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/staticwebassets.development.json
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/scopedcss/bundle/Domain.styles.css
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/Domain.csproj.CopyComplete
+/Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/Domain.genruntimeconfig.cache
+/Users/alperalanyali/Desktop/RentACarServer/Domain/bin/Debug/net7.0/Domain.dll
+/Users/alperalanyali/Desktop/RentACarServer/Domain/bin/Debug/net7.0/Domain.pdb
+/Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/Domain.MvcApplicationPartsAssemblyInfo.cache
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/Domain.dll
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/refint/Domain.dll
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/Domain.pdb
-/Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/Domain.genruntimeconfig.cache
 /Users/alperalanyali/Desktop/RentACarServer/Domain/obj/Debug/net7.0/ref/Domain.dll

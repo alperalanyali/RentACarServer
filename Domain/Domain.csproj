@@ -29,6 +29,7 @@
     <None Remove="Repositories\NavigationItemRoleRepository\" />
     <None Remove="Repositories\CarRequestRepository\" />
     <None Remove="Repositories\LanguageRepository\" />
+    <None Remove="Repositories\UserCompanyRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -52,6 +53,7 @@
     <Folder Include="Repositories\NavigationItemRoleRepository\" />
     <Folder Include="Repositories\CarRequestRepository\" />
     <Folder Include="Repositories\LanguageRepository\" />
+    <Folder Include="Repositories\UserCompanyRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />

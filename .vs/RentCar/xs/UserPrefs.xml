@@ -1,42 +1,51 @@
 ﻿<Properties StartupConfiguration="{9766A3A9-214D-43B0-9974-B9FAE0CB1BA6}|https">
-  <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Context/AppDbContext.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Application/Features/AuthFeatures/LoginCommand/LoginCommandHandler.cs">
     <Files>
-      <File FileName="Persistence/Services/NavigationItemRoleService.cs" />
-      <File FileName="Application/Features/NavigationItemRoleFeatures/Queries/GetNavigationItemRolesByUserId/GetNavigationItemRolesByUserIdQueryHandler.cs" />
-      <File FileName="WebApi/Properties/launchSettings.json" />
-      <File FileName="WebApi/Program.cs" />
-      <File FileName="WebApi/appsettings.json" Line="10" Column="255" />
-      <File FileName="WebApi/Controllers/ControlController.cs" Line="22" Column="19" />
-      <File FileName="Persistence/Services/AuthService.cs" Line="1" Column="1" />
-      <File FileName="WebApi/Controllers/AuthController.cs" Line="26" Column="1" />
-      <File FileName="Persistence/Context/AppDbContext.cs" Line="48" Column="282" />
+      <File FileName="Application/Features/AuthFeatures/LoginCommand/LoginCommandResponse.cs" Line="11" Column="37" />
+      <File FileName="Domain/Entities/User.cs" Line="14" Column="53" />
+      <File FileName="Application/Features/AuthFeatures/LoginCommand/LoginCommandHandler.cs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentCar" expanded="True">
-            <Node name="Application" expanded="True" />
-            <Node name="Infrastructure" expanded="True" />
-            <Node name="Persistence" expanded="True">
-              <Node name="Context" expanded="True">
-                <Node name="AppDbContext.cs" selected="True" />
+            <Node name="Application" expanded="True">
+              <Node name="Features" expanded="True">
+                <Node name="AuthFeatures" expanded="True">
+                  <Node name="LoginCommand" expanded="True">
+                    <Node name="LoginCommandHandler.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="NavigationItemRoleFeatures" expanded="True">
+                  <Node name="Queries" expanded="True">
+                    <Node name="GetNavigationItemRolesByUserId" expanded="True" />
+                  </Node>
+                </Node>
               </Node>
+              <Node name="Services" expanded="True" />
             </Node>
-            <Node name="RentCar" expanded="True" />
+            <Node name="Domain" expanded="True">
+              <Node name="Dtos" expanded="True" />
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="Persistence" expanded="True">
+              <Node name="Services" expanded="True" />
+            </Node>
             <Node name="WebApi" expanded="True">
-              <Node name="Properties" expanded="True" />
+              <Node name="Configurations" expanded="True" />
+              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>

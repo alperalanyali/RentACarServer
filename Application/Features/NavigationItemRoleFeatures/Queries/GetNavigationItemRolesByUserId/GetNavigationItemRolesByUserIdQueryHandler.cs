@@ -26,7 +26,7 @@ namespace Application.Features.NavigationItemRoleFeatures.Queries.GetNavigationI
             foreach (var userRole in userRoles)
             {
                 var navItemRoles = await _navItemRoleService.GetNavigationItemRoleByUserId(userRole.RoleId);
-                foreach (var navItemRole in navItemRoles)
+                foreach (var navItemRole in navItemRoles.OrderBy(p => p.NavigationItem.Priority))
                 {
                     bool alreadExist = dtos.Any(item => item.NavigationName == navItemRole.NavigationItem.NavigationName);
                     if (!alreadExist)
@@ -34,9 +34,9 @@ namespace Application.Features.NavigationItemRoleFeatures.Queries.GetNavigationI
                         if (navItemRole.NavigationItem.TopNavBarId == "")
                         {
                             List<NavigationItem> list = new List<NavigationItem>();
-                            list = await _navItemService.GetNavigationItemsByTopBarId(navItemRole.NavigationItem.NavigationName);
-                            var subMenuDto = list.Select(p => new NavigationItemDto(p.Id.ToString(), p.NavigationName, p.NavigationPath, p.TopNavBarId, p.Priority, null)).ToList();
-                            dtos.Add(new NavigationItemDto(navItemRole.NavigationItem.Id.ToString(), navItemRole.NavigationItem.NavigationName, navItemRole.NavigationItem.NavigationPath, navItemRole.NavigationItem.TopNavBarId, navItemRole.NavigationItem.Priority, subMenuDto));
+                            list = await _navItemService.GetNavigationItemsByTopBarId(navItemRole.NavigationItem.Id.ToString());
+                            var subMenuDto = list.Select(p => new NavigationItemDto(p.Id.ToString(), p.NavigationName, p.NavigationPath,p.NavigationComponentName,p.NavigationPathMobile, p.TopNavBarId, p.Priority, null)).ToList();
+                            dtos.Add(new NavigationItemDto(navItemRole.NavigationItem.Id.ToString(), navItemRole.NavigationItem.NavigationName, navItemRole.NavigationItem.NavigationPath,navItemRole.NavigationItem.NavigationComponentName,navItemRole.NavigationItem.NavigationPathMobile, navItemRole.NavigationItem.TopNavBarId, navItemRole.NavigationItem.Priority, subMenuDto));
                         }
                     }
 

@@ -10,6 +10,8 @@ namespace Domain.Entities
 		public string RefreshToken { get; set; }
 		public DateTime RefreshTokenExpires { get; set; }
 		public Status Statu { get; set; }
+
+		public ICollection<UserRole> UserRoles { get; set; }
 	}
 }
 
