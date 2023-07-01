@@ -2534,21 +2534,17 @@
     ]
   },
   "packageFolders": {
-    "/Users/alperalanyali/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/Users/alperalanyali/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alperalanyali/Desktop/RentCarServer/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/Users/alperalanyali/Desktop/RentACarServer/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Infrastructure/Infrastructure.csproj",
+      "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Infrastructure/Infrastructure.csproj",
       "packagesPath": "/Users/alperalanyali/.nuget/packages/",
-      "outputPath": "/Users/alperalanyali/Desktop/RentCarServer/Infrastructure/obj/",
+      "outputPath": "/Users/alperalanyali/Desktop/RentACarServer/Infrastructure/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "/Users/alperalanyali/.nuget/NuGet/NuGet.Config"
       ],
@@ -2556,18 +2552,17 @@
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj": {
-              "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj"
+            "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj": {
+              "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj"
             },
-            "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj": {
-              "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj"
+            "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj": {
+              "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj"
             }
           }
         }

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "mMPAy4jTJrNxHG2RtyAyd9oa5bE4WoKTtCVkiVi5uOc=",
+  "Hash": "tgif/kSuVIvhBh4E8E1duaS0iwS/aQjQxZND4//6aRA=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj",
+      "Identity": "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj",
       "Version": 2,
       "Source": "Application",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -18,7 +18,7 @@
       "AdditionalBuildPropertiesToRemove": "TargetFramework"
     },
     {
-      "Identity": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj",
+      "Identity": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj",
       "Version": 2,
       "Source": "Domain",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -29,7 +29,7 @@
       "AdditionalBuildPropertiesToRemove": "TargetFramework"
     },
     {
-      "Identity": "/Users/alperalanyali/Desktop/RentCarServer/Persistence/Persistence.csproj",
+      "Identity": "/Users/alperalanyali/Desktop/RentACarServer/Persistence/Persistence.csproj",
       "Version": 2,
       "Source": "Persistence",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

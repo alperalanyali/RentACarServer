@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "WhsIPF/0mJ9/1KD5qvFZ7BiPqAuw81sf3+H/uRosrEs=",
+  "Hash": "eyKGQ7BC8Fs6I+SZsIo1JDOkByKfGU2Gb7VbTRlpgsQ=",
   "Source": "Application",
   "BasePath": "_content/Application",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj",
+      "Identity": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj",
       "Version": 2,
       "Source": "Domain",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

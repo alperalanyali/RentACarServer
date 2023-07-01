@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "YA7WGoYGrB/2xuC+7vew2t8m93SWh59gTPYTtcdMv2w=",
+  "Hash": "FeSXxFiQHrf4XyrJ4UJQOaf+41nheBmRUUTKnrHRjUI=",
   "Source": "Persistence",
   "BasePath": "_content/Persistence",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj",
+      "Identity": "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj",
       "Version": 2,
       "Source": "Application",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -18,7 +18,7 @@
       "AdditionalBuildPropertiesToRemove": "TargetFramework"
     },
     {
-      "Identity": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj",
+      "Identity": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj",
       "Version": 2,
       "Source": "Domain",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

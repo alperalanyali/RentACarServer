@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj": {}
+    "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj": {}
   },
   "projects": {
-    "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj": {
+    "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj",
+        "projectUniqueName": "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Application/Application.csproj",
+        "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj",
         "packagesPath": "/Users/alperalanyali/.nuget/packages/",
-        "outputPath": "/Users/alperalanyali/Desktop/RentCarServer/Application/obj/",
+        "outputPath": "/Users/alperalanyali/Desktop/RentACarServer/Application/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "/Users/alperalanyali/.nuget/NuGet/NuGet.Config"
         ],
@@ -23,7 +20,6 @@
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "/usr/local/share/dotnet/sdk/7.0.302/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -31,8 +27,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj": {
-                "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj"
+              "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj": {
+                "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj"
               }
             }
           }
@@ -75,18 +71,15 @@
         }
       }
     },
-    "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj": {
+    "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/alperalanyali/Desktop/RentCarServer/Domain/Domain.csproj",
+        "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj",
         "packagesPath": "/Users/alperalanyali/.nuget/packages/",
-        "outputPath": "/Users/alperalanyali/Desktop/RentCarServer/Domain/obj/",
+        "outputPath": "/Users/alperalanyali/Desktop/RentACarServer/Domain/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "/Users/alperalanyali/.nuget/NuGet/NuGet.Config"
         ],
@@ -94,7 +87,6 @@
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "/usr/local/share/dotnet/sdk/7.0.302/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
