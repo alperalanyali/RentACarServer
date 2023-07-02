@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.NavigationItemFeatures.Commands.CreateNavigationItem;
 using Application.Features.NavigationItemFeatures.Queries.GetAllNavigationItems;
+using Application.Features.NavigationItemFeatures.Queries.GetNavItemsByTopNavId;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Abstractions;
@@ -28,6 +29,12 @@ namespace WebApi.Controllers
         [HttpPost("GetAllNavigationItems")]
         public async Task<ActionResult> GetAllNavigationItems(GetAllNavigationItemsQuery request)
         {
+            var response = await _mediator.Send(request);
+            return Ok(response);
+        }
+        [HttpPost("GetNavigationItemByTopNavId")]
+        public async Task<ActionResult> GetNavigationItemByTopNavId(GetNavItemsByTopNavIdCommand request) {
+
             var response = await _mediator.Send(request);
             return Ok(response);
         }

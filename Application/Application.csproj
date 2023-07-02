@@ -103,6 +103,7 @@
     <None Remove="Features\UserCompanyFeatures\Commands\RemoveById\" />
     <None Remove="Features\UserCompanyFeatures\Queries\GetAllList\" />
     <None Remove="Features\UserCompanyFeatures\Queries\GetlListByUserId\" />
+    <None Remove="Features\NavigationItemFeatures\Queries\GetNavItemsByTopNavId\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstractions\" />
@@ -200,6 +201,7 @@
     <Folder Include="Features\UserCompanyFeatures\Commands\RemoveById\" />
     <Folder Include="Features\UserCompanyFeatures\Queries\GetAllList\" />
     <Folder Include="Features\UserCompanyFeatures\Queries\GetlListByUserId\" />
+    <Folder Include="Features\NavigationItemFeatures\Queries\GetNavItemsByTopNavId\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.1" />
