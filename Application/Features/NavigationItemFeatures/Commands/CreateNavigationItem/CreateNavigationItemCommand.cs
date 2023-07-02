@@ -7,6 +7,7 @@ namespace Application.Features.NavigationItemFeatures.Commands.CreateNavigationI
 		string navigationName,
 		string navigationPath,
 		string navigationComponentName,
+		string navigationPathMobile,
 		string topNavBarId,
 		int Priority
 

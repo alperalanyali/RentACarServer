@@ -17,12 +17,13 @@ namespace Domain.Entities
 		{
 
 		}
-		public NavigationItem(string navigationName,string navigationPath,string navigationComponentName,string topNavbarId,int priority)
+		public NavigationItem(string navigationName,string navigationPath,string navigationComponentName,string topNavbarId,int priority,string navigaitonPathMobile)
 		{
 			Id = Guid.NewGuid();
 			NavigationName = navigationName;
 			NavigationPath = navigationPath;
 			NavigationComponentName = navigationComponentName;
+			NavigationPathMobile = navigaitonPathMobile;
 			TopNavBarId = topNavbarId;
 			Priority = priority;
 		}

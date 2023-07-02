@@ -350,7 +350,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5"
         },
         "runtime": {
-          "RentACar_Mobile.dll": {}
+          "Domain.dll": {}
         }
       }
     }
