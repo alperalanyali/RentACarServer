@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.RoleFeatures.Commands.CreateRole;
+using Application.Features.RoleFeatures.Commands.DeleteRoleById;
 using Application.Features.RoleFeatures.Queries.GetAll;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -27,6 +28,12 @@ namespace WebApi.Controllers
         [HttpPost("GetAllRoles")]
         public async Task<ActionResult> GetAllRoles(GetAllRolesQuery request,CancellationToken cancellationToken)
         {
+            var response = await _mediator.Send(request, cancellationToken);
+            return Ok(response);
+        }
+        [HttpPost("DeleteRoleById")]
+        public async Task<ActionResult> DeleteRoleById(DeleteRoleByIdCommand request,CancellationToken cancellationToken) {
+
             var response = await _mediator.Send(request, cancellationToken);
             return Ok(response);
         }

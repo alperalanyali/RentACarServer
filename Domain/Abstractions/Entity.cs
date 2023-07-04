@@ -6,8 +6,9 @@ namespace Domain.Abstractions
 	public class Entity
 	{
 		public Guid Id { get; set; }
-		public Status  Status { get; set; }
-		public DateTime CreatedDate { get; set; }
+		public bool IsDeleted { get; set; } = false;
+		public bool IsUpdated { get; set; } = false;
+		public DateTime CreatedDate { get; set; } = DateTime.Now;
 		public DateTime? UpdatedDate { get; set; }
 	}
 }

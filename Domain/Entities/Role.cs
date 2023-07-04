@@ -6,8 +6,9 @@ namespace Domain.Entities
 {
 	public class Role:IdentityRole<Guid>
 	{
-		public Status Status { get; set; }
-
+		public bool isDeleted { get; set; } = false;		
+		public DateTime CreatedDate { get; set; }
+		public DateTime UpdatedDate { get; set; }
 
 		public Role()
 		{
@@ -17,6 +18,8 @@ namespace Domain.Entities
 		{
 			Id = Guid.NewGuid();
 			Name = name;
+			CreatedDate = DateTime.Now;
+			isDeleted = false;
 
 		}
 	}
