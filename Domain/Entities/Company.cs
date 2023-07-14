@@ -11,6 +11,7 @@ namespace Domain.Entities
 		}
 		public Company(string companyName,string address1,string address2,string city,string country,string taxNumber,string logo)
 		{
+			Id = Guid.NewGuid();
 			CompanyName = companyName;
 			Address1 = address1;
 			Address2 = address2;

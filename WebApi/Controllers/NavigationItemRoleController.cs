@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.NavigationItemRoleFeatures.Commands.CreateNavigationItemRole;
 using Application.Features.NavigationItemRoleFeatures.Queries.GetAllNavigationItemRole;
+using Application.Features.NavigationItemRoleFeatures.Queries.GetNavigationItemRolesByRoleIdAndTopNavbarId;
 using Application.Features.NavigationItemRoleFeatures.Queries.GetNavigationItemRolesByUserId;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -35,6 +36,12 @@ namespace WebApi.Controllers
         public async Task<ActionResult> GetNavigationItemRolesByUserId(string userId)
         {
             var request = new GetNavigationItemRolesByUserIdQuery(userId);
+            var response = await _mediator.Send(request);
+            return Ok(response);
+        }
+        [HttpGet("GetNavigationItemRolesByRoleIdandTopNavbarId")]
+        public async Task<ActionResult> GetNavigationItemRolesByRoleIdandTopNavbarId(Guid roleId,string topNavbarId) {
+            var request = new GetNavigationItemRolesByRoleIdAndTopNavbarIdQuery(roleId, topNavbarId);
             var response = await _mediator.Send(request);
             return Ok(response);
         }

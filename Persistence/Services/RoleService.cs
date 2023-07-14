@@ -32,12 +32,14 @@ namespace Persistence.Services
 
         public async Task<IList<Role>> GetList(string search)
         {
-            var list = await _roleManager.Roles.ToListAsync();
+            var list = await _roleManager.Roles.Where(p => p.isDeleted == false).ToListAsync();
             if (!string.IsNullOrEmpty(search))
             {
                 list = await _roleManager.Roles.Where(p => !string.IsNullOrEmpty(search) && (
                        p.Name.ToLower().Contains(search.ToLower())
-                )).ToListAsync();
+                )
+                && (p.isDeleted == false)
+                ).ToListAsync();
             }
             return (IList<Role>)list;
         }

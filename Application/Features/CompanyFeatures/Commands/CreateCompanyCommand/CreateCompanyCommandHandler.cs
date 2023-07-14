@@ -18,10 +18,10 @@ namespace Application.Features.CompanyFeatures.Commands.CreateCompanyCommand
 
         public async Task<CreateCompanyCommandResponse> Handle(CreateCompanyCommand request, CancellationToken cancellationToken)
         {
-            var logoByte = FileService.FileConvertByteArrayToDatabase(request.Logo);
-            string logoBase64 = "data:image/jpeg;base64,"+Convert.ToBase64String(logoByte);
+            //var logoByte = FileService.FileConvertByteArrayToDatabase(request.Logo);
+            //string logoBase64 = "data:image/jpeg;base64,"+Convert.ToBase64String(logoByte);
 
-            var company = new Company(request.CompanyName, request.Address1, request.Address2, request.City, request.Country, request.TaxNumber, logoBase64);
+            var company = new Company(request.CompanyName, request.Address1, request.Address2, request.City, request.Country, request.TaxNumber, request.Logo);
 
             await _companyService.CreateAsync(company, cancellationToken);
 

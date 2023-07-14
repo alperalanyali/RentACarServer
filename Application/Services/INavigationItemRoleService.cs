@@ -12,6 +12,7 @@ namespace Application.Services
 		Task<NavigationItemRole> GetById(Guid id);
 		Task<IList<NavigationItemRole>> GetNavigationItemRoleByRoleId(Guid roleId,string search);
 		Task<IList<NavigationItemRole>> GetNavigationItemRoleByUserId(Guid roleId);
+		Task<IList<NavigationItemRole>> GetNavigationItemRolesByRoleIdandTopNavbarId(Guid roleId, string topNavBarId);
 		
 	}
 }

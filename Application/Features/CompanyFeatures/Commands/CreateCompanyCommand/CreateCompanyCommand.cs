@@ -10,7 +10,8 @@ namespace Application.Features.CompanyFeatures.Commands.CreateCompanyCommand
 		string TaxNumber,
 		string City,
 		string Country,
-		IFormFile Logo
+		string Logo,
+		IFormFile? LogoForm
 
 		):ICommand<CreateCompanyCommandResponse>;
 	

@@ -77,6 +77,12 @@ namespace Persistence.Services
             return await _navigationItemRoleQuery.GetWhere(p => p.RoleId == roleId).Include(p => p.NavigationItem).OrderBy(p => p.NavigationItem.Priority).ToListAsync();
         }
 
+        public async Task<IList<NavigationItemRole>> GetNavigationItemRolesByRoleIdandTopNavbarId(Guid roleId, string topNavBarId)
+        {
+            var navItemRoles = await _navigationItemRoleQuery.GetWhere(p => p.RoleId == roleId && p.NavigationItem.TopNavBarId == topNavBarId).Include(p => p.NavigationItem).OrderBy(p => p.NavigationItem.Priority).ToListAsync();
+            return navItemRoles;
+        }
+
         public async Task Update(NavigationItemRole navigationItem, CancellationToken cancellationToken)
         {
             _navigationItemRoleCommand.Update(navigationItem);

@@ -28,7 +28,7 @@ namespace Application.Features.AuthFeatures.LoginCommand
             List<RoleDto> roleDtos = new List<RoleDto>();
             foreach(var role in user.UserRoles)
             {
-                var roleDto = new RoleDto(role.Role.Name);
+                var roleDto = new RoleDto(role.RoleId,role.Role.Name);
                 roleDtos.Add(roleDto);
             }
             LoginCommandResponse response = new LoginCommandResponse(Token: await _jwtProvider.CreateToken(user), Email: user.Email, UserId: user.Id.ToString(), FullName: user.FullName,roleDtos);
