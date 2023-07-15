@@ -1,11 +1,15 @@
 ﻿<Properties StartupConfiguration="{9766A3A9-214D-43B0-9974-B9FAE0CB1BA6}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Application/Features/UserCompanyFeatures/Queries/GetlListByUserId/GetListByUserIdQueryHandler.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/UserRoleService.cs">
     <Files>
-      <File FileName="WebApi/Properties/launchSettings.json" Line="7" Column="45" />
-      <File FileName="WebApi/Controllers/UserCompanyController.cs" Line="54" Column="1" />
-      <File FileName="Application/Features/UserCompanyFeatures/Queries/GetlListByUserId/GetListByUserIdQueryHandler.cs" Line="24" Column="1" />
-      <File FileName="Application/Features/UserCompanyFeatures/Queries/GetlListByUserId/GetListByUserIdQueryResponse.cs" Line="8" Column="1" />
+      <File FileName="Persistence/Services/UserRoleService.cs" Line="34" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,32 +17,37 @@
           <Node name="RentCar" expanded="True">
             <Node name="Application" expanded="True">
               <Node name="Features" expanded="True">
-                <Node name="UserCompanyFeatures" expanded="True">
+                <Node name="AuthFeatures" expanded="True">
+                  <Node name="LoginCommand" expanded="True" />
+                </Node>
+                <Node name="NavigationItemRoleFeatures" expanded="True">
                   <Node name="Queries" expanded="True">
-                    <Node name="GetlListByUserId" expanded="True">
-                      <Node name="GetListByUserIdQueryHandler.cs" selected="True" />
-                    </Node>
+                    <Node name="GetNavigationItemRolesByRoleIdAndTopNavbarId" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="UserFeatures" expanded="True">
+                  <Node name="Queries" expanded="True">
+                    <Node name="GetAllUsers" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="UserRoleFeatures" expanded="True">
+                  <Node name="Queries" expanded="True">
+                    <Node name="GetAllUserRoles" expanded="True" />
                   </Node>
                 </Node>
               </Node>
             </Node>
-            <Node name="Domain" expanded="True" />
-            <Node name="Persistence" expanded="True">
-              <Node name="Services" expanded="True" />
+            <Node name="Domain" expanded="True">
+              <Node name="Entities" expanded="True" />
             </Node>
-            <Node name="WebApi">
-              <Node name="Controllers" expanded="True" />
+            <Node name="Persistence">
+              <Node name="Services">
+                <Node name="UserRoleService.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

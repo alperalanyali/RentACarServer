@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 
 namespace WebApi.Configurations
 {
@@ -8,7 +9,8 @@ namespace WebApi.Configurations
 
         public void Install(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles); ;
             services.AddCors(options => options.AddDefaultPolicy(
                 options =>
                 {

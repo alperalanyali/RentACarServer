@@ -106,6 +106,9 @@
     <None Remove="Features\NavigationItemFeatures\Queries\GetNavItemsByTopNavId\" />
     <None Remove="Features\RoleFeatures\Commands\DeleteRoleById\" />
     <None Remove="Features\NavigationItemRoleFeatures\Queries\GetNavigationItemRolesByRoleIdAndTopNavbarId\" />
+    <None Remove="Features\UserFeatures\" />
+    <None Remove="Features\UserFeatures\Queries\" />
+    <None Remove="Features\UserFeatures\Queries\GetAllUsers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstractions\" />
@@ -206,6 +209,9 @@
     <Folder Include="Features\NavigationItemFeatures\Queries\GetNavItemsByTopNavId\" />
     <Folder Include="Features\RoleFeatures\Commands\DeleteRoleById\" />
     <Folder Include="Features\NavigationItemRoleFeatures\Queries\GetNavigationItemRolesByRoleIdAndTopNavbarId\" />
+    <Folder Include="Features\UserFeatures\" />
+    <Folder Include="Features\UserFeatures\Queries\" />
+    <Folder Include="Features\UserFeatures\Queries\GetAllUsers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.1" />
