@@ -16,7 +16,7 @@ namespace Application.Features.CarRequestFeatures.Commands.CreateCarRequest
 
         public async Task<CreateCarRequestCommandResponse> Handle(CreateCarRequestCommand request, CancellationToken cancellationToken)
         {
-            var carRequest = new CarRequest(request.UserId,request.CarId,request.BookingDate);
+            var carRequest = new CarRequest(request.UserId,request.CarId,request.StartDate,request.EndDate,request.Duration,request.TotalPrice,request.PaymentStatus,request.rentalStatus);
             await _carRequestService.CreateCarRequest(carRequest, cancellationToken);
             return new();
         }

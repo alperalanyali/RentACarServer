@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.CarRequestFeatures.Commands.CreateCarRequest;
 using Application.Features.CarRequestFeatures.Queries.GetAllCarRequest;
+using Application.Features.CarRequestFeatures.Queries.GetCarRequestsByUserId;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Abstractions;
@@ -29,6 +30,13 @@ namespace WebApi.Controllers
         public async Task<ActionResult> GetAllCarRequests(GetAllCarRequestQuery request)
         {
             var response = await _mediator.Send(request);
+            return Ok(response);
+        }
+
+        [HttpPost("GetCarRequestsByUserId")]
+        public async Task<ActionResult> GetCarRequestsByUserId(GetCarRequestsByUserIdQuery request){
+            var response = await _mediator.Send(request);
+
             return Ok(response);
         }
     }

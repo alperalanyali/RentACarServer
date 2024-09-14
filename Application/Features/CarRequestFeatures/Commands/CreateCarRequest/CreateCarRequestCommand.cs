@@ -8,8 +8,12 @@ namespace Application.Features.CarRequestFeatures.Commands.CreateCarRequest
 	public sealed record CreateCarRequestCommand(
 		string CarId,
         string UserId,      
-        DateTime BookingDate,
-        DateTime RealDate    
+        DateTime StartDate,
+        DateTime EndDate,
+        int Duration,
+        PaymentStatus PaymentStatus,
+        RentalStatus rentalStatus,
+        decimal TotalPrice  
 		):ICommand<CreateCarRequestCommandResponse>;
 
 }

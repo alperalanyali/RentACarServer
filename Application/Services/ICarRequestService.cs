@@ -11,6 +11,8 @@ namespace Application.Services
 		Task<IList<CarRequest>> GetAll(string search);
 		Task<IList<CarRequest>> GetCarRequestsByCarId(Guid carId);
 		Task<CarRequest> GetById(Guid id);
+
+		Task<IList<CarRequest>> GetCarRequestsByUserId(Guid userId,int currentPage,int pageSize,CancellationToken cancellationToken);
 	}
 }
 

@@ -14,22 +14,38 @@ namespace Domain.Entities
 		public Guid CarId { get; set; }
 		public Car Car { get; set; }
 
-		public DateTime BookingDate { get; set; }
+		public DateTime StartDate { get; set; }
 
-		public DateTime RealDate { get; set; }
+		public DateTime EndDate { get; set; }
 
-		public Status Status { get; set; }
+		public int Duration { get; set; }
+
+		public decimal TotalPrice { get; set; }
+
+		
+		public RentalStatus RentalStatus { get; set; }
+
+		public PaymentStatus PaymentStatus { get; set; }
+
+		public DateTime CreatedAt { get; set; }
+		public DateTime UpdatedAt { get; set; }
 
 		public CarRequest()
 		{
 
 		}
-		public CarRequest(string userId,string carID,DateTime bookingDate)
+		public CarRequest(string userId,string carId,DateTime startDate,DateTime endDate,int duration,decimal totalPrice,PaymentStatus paymentStatus,RentalStatus rentalStatus)
 		{
 			Id = Guid.NewGuid();
-			CarId = new Guid(carID);
+			CarId = new Guid(carId);
 			UserId = new Guid(userId);
-			BookingDate = bookingDate;
+			StartDate = startDate;
+			EndDate = endDate;
+			Duration = duration;
+			TotalPrice = totalPrice;
+			PaymentStatus = paymentStatus;
+			RentalStatus = rentalStatus;
+		
 
 		}
 

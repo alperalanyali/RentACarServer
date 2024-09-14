@@ -20,8 +20,7 @@ namespace Application.Features.CarRequestFeatures.Commands.UpdateCarRequest
             {
                 carRequest.CarId = request.CarId;
                 carRequest.UserId = request.UserId;
-                carRequest.BookingDate = request.BookingDate;
-                carRequest.Status = request.Status;
+           
 
                 await _carRequestService.UpdateCarRequest(carRequest, cancellationToken);
             }else

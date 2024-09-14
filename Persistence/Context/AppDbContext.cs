@@ -33,6 +33,8 @@ namespace Persistence.Context
         public DbSet<Language> Languages { get; set; }
         public DbSet<UserCompany> UserCompanies { get; set; }
 
+        public DbSet<Payment> Payments { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

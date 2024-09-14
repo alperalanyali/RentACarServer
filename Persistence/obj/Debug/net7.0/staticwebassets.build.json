@@ -1,31 +1,31 @@
 {
   "Version": 1,
-  "Hash": "FeSXxFiQHrf4XyrJ4UJQOaf+41nheBmRUUTKnrHRjUI=",
+  "Hash": "Wn3VSDGGWo80rxSToSK18jCgWqz9cT4I42htiCjl75E=",
   "Source": "Persistence",
   "BasePath": "_content/Persistence",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj",
+      "Identity": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Application/Application.csproj",
       "Version": 2,
       "Source": "Application",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "TargetFramework"
     },
     {
-      "Identity": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj",
+      "Identity": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Domain/Domain.csproj",
       "Version": 2,
       "Source": "Domain",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "TargetFramework"
     }
   ],

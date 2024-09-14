@@ -57,9 +57,17 @@ namespace Persistence.Services
             return list;
         }
 
-        public Task UpdateCarRequest(CarRequest carRequest, CancellationToken cancellationToken)
+        public async Task<IList<CarRequest>> GetCarRequestsByUserId(Guid userId, int currentPage, int pageSize, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var list = await _CarRequestQuery.GetWhere(p => p.UserId == userId).Include(p => p.Car).Skip((currentPage - 1)*pageSize).Take(pageSize).ToListAsync();
+
+            return list;
+        }
+
+        public async Task UpdateCarRequest(CarRequest carRequest, CancellationToken cancellationToken)
+        {
+             _carRequestCommand.Update(carRequest);
+             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
     }
 }

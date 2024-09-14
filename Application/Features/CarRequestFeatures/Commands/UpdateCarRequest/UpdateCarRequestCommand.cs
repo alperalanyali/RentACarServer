@@ -13,12 +13,17 @@ namespace Application.Features.CarRequestFeatures.Commands.UpdateCarRequest
 
         Guid CarId,
 
-        DateTime BookingDate,
+        DateTime StartDate,
 
-        DateTime RealDate ,
+        DateTime EndDate ,
 
-        Status Status
+        int Duration,
 
+        PaymentStatus PaymentStatus,
+
+        RentalStatus RentalStatus
+
+        
 		):ICommand<UpdateCarRequestCommandResponse>;
 
 }

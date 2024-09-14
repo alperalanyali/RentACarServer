@@ -1,20 +1,20 @@
 {
   "Version": 1,
-  "Hash": "eyKGQ7BC8Fs6I+SZsIo1JDOkByKfGU2Gb7VbTRlpgsQ=",
+  "Hash": "jxkyMwIrn5R6mQSjHUJVKP5Gssur6zoIj/h0xn7wVFk=",
   "Source": "Application",
   "BasePath": "_content/Application",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj",
+      "Identity": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Domain/Domain.csproj",
       "Version": 2,
       "Source": "Domain",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "TargetFramework"
     }
   ],

@@ -9,6 +9,7 @@ using Domain.Repositories.CompanyRepository;
 using Domain.Repositories.KLogRepository;
 using Domain.Repositories.NavigationItemRepository;
 using Domain.Repositories.NavigationItemRoleRepository;
+using Domain.Repositories.PaymentRepository;
 using Domain.Repositories.QuestionRepository;
 using Domain.Repositories.SurveyQuestionRepository;
 using Domain.Repositories.SurveyRepository;
@@ -24,6 +25,7 @@ using Persistence.Repositories.CompanyRepository;
 using Persistence.Repositories.KLogRepository;
 using Persistence.Repositories.NavigationItemRepository;
 using Persistence.Repositories.NavigationItemRoleRepository;
+using Persistence.Repositories.PaymentRepository;
 using Persistence.Repositories.QuestionRepository;
 using Persistence.Repositories.SurveyQuestionRepository;
 using Persistence.Repositories.SurveyRepository;
@@ -57,6 +59,7 @@ namespace WebApi.Configurations
             services.AddScoped<INavigationItemService, NavigationItemService>();
             services.AddScoped<INavigationItemRoleService, NavigationItemRoleService>();
             services.AddScoped<IUserCompanyService, UserCompanyService>();
+            services.AddScoped<IPaymentService,PaymentService>(); 
 
             #region Repository
             services.AddScoped<IBranchCommandRepository, BranchCommandRepository>();
@@ -87,6 +90,8 @@ namespace WebApi.Configurations
             services.AddScoped<INavigationItemRoleQueryRepository, NavigationItemRoleQueryRepository>();
             services.AddScoped<IUserCompanyCommandRepository, UserCompanyCommandRepository>();
             services.AddScoped<IUserCompanyQueryRepository, UserCompanyQueryRepository>();
+            services.AddScoped<IPaymentQueryRepository,PaymentQueryRepository>();
+            services.AddScoped<IPaymentCommandRepository,PaymentCommandRepository>();
             #endregion
             #endregion
         }
