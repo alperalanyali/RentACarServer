@@ -48,12 +48,12 @@ namespace Persistence.Services
 
         public async Task<IList<Branch>> GetList(string search)
         {
-            var list = await _branchQueryRepository.GetAllAsync().ToListAsync();
+            var list = await _branchQueryRepository.GetAllAsync().Include(p => p.Company).ToListAsync();
             if (!string.IsNullOrEmpty(search))
             {
                 list = await _branchQueryRepository.GetWhere(p => (!string.IsNullOrEmpty(search)) && (
                 p.Company.CompanyName.ToLower().Contains(search.ToLower()) || p.BranchName.ToLower().Contains(search.ToLower())
-                )).ToListAsync();
+                )).Include(p => p.Company).ToListAsync();
             }
             return list;
         }

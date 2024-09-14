@@ -1,33 +1,28 @@
 ﻿<Properties StartupConfiguration="{9766A3A9-214D-43B0-9974-B9FAE0CB1BA6}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/UserRoleService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/BranchService.cs">
     <Files>
-      <File FileName="Persistence/Services/UserRoleService.cs" Line="34" Column="10" />
+      <File FileName="Persistence/Services/BranchService.cs" Line="51" Column="89" />
+      <File FileName="Persistence/Services/CarBranchService.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RentCar" expanded="True">
-            <Node name="Application" expanded="True">
+            <Node name="Application">
               <Node name="Features" expanded="True">
                 <Node name="AuthFeatures" expanded="True">
                   <Node name="LoginCommand" expanded="True" />
                 </Node>
-                <Node name="NavigationItemRoleFeatures" expanded="True">
+                <Node name="BranchFeatures" expanded="True">
                   <Node name="Queries" expanded="True">
-                    <Node name="GetNavigationItemRolesByRoleIdAndTopNavbarId" expanded="True" />
+                    <Node name="GetAll" expanded="True" />
+                    <Node name="GetBranchesByCompanyId" expanded="True" />
                   </Node>
                 </Node>
-                <Node name="UserFeatures" expanded="True">
-                  <Node name="Queries" expanded="True">
-                    <Node name="GetAllUsers" expanded="True" />
+                <Node name="NavigationItemRoleFeatures" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="CreateNavigationItemRole" expanded="True" />
                   </Node>
                 </Node>
                 <Node name="UserRoleFeatures" expanded="True">
@@ -37,12 +32,12 @@
                 </Node>
               </Node>
             </Node>
-            <Node name="Domain" expanded="True">
+            <Node name="Domain">
               <Node name="Entities" expanded="True" />
             </Node>
             <Node name="Persistence">
-              <Node name="Services">
-                <Node name="UserRoleService.cs" selected="True" />
+              <Node name="Services" expanded="True">
+                <Node name="BranchService.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -50,4 +45,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RentCar PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alperalanyali/Desktop/RentACarServer/Infrastructure/Infrastructure.csproj": {}
+    "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Infrastructure/Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj": {
+    "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj",
+        "projectUniqueName": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj",
+        "projectPath": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Application/Application.csproj",
         "packagesPath": "/Users/alperalanyali/.nuget/packages/",
-        "outputPath": "/Users/alperalanyali/Desktop/RentACarServer/Application/obj/",
+        "outputPath": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/alperalanyali/.nuget/NuGet/NuGet.Config"
@@ -20,15 +20,14 @@
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj": {
-                "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj"
+              "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Domain/Domain.csproj": {
+                "projectPath": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Domain/Domain.csproj"
               }
             }
           }
@@ -37,6 +36,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -67,18 +71,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj": {
+    "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj",
+        "projectPath": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Domain/Domain.csproj",
         "packagesPath": "/Users/alperalanyali/.nuget/packages/",
-        "outputPath": "/Users/alperalanyali/Desktop/RentACarServer/Domain/obj/",
+        "outputPath": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/alperalanyali/.nuget/NuGet/NuGet.Config"
@@ -87,7 +91,6 @@
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -100,6 +103,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -134,18 +142,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/alperalanyali/Desktop/RentACarServer/Infrastructure/Infrastructure.csproj": {
+    "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alperalanyali/Desktop/RentACarServer/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/Users/alperalanyali/.nuget/packages/",
-        "outputPath": "/Users/alperalanyali/Desktop/RentACarServer/Infrastructure/obj/",
+        "outputPath": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/alperalanyali/.nuget/NuGet/NuGet.Config"
@@ -160,11 +168,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj": {
-                "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Application/Application.csproj"
+              "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Application/Application.csproj": {
+                "projectPath": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Application/Application.csproj"
               },
-              "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj": {
-                "projectPath": "/Users/alperalanyali/Desktop/RentACarServer/Domain/Domain.csproj"
+              "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Domain/Domain.csproj": {
+                "projectPath": "/Users/alperalanyali/Desktop/RentACar/RentACarServer/Domain/Domain.csproj"
               }
             }
           }
@@ -173,6 +181,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -204,7 +217,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }
